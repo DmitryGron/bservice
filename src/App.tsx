@@ -9,7 +9,7 @@ function App() {
   return (
     <BrowserRouter>
           <Switch>
-                <Route path={AppPath.ROOT} component={Home} />
+                <Route path={AppPath.ROOT} exact component={Home} />
                 {/* <Route path={AppPath.WHYUS} component={} />
                 <Route path={AppPath.WHATWEOFFER} component={} />
                 <Route path={AppPath.ACCOUNTINGCOST} component={} />

@@ -6,7 +6,7 @@ export const NotFound = () => (
   <StyledDiv>
     <StyledH1>404</StyledH1>
     <StyledH4 > Page Not Found </StyledH4>
-    <StyledLink to="/registration" className="link">
+    <StyledLink to="/" className="link">
       Go to Registration page
     </StyledLink>
   </StyledDiv>
