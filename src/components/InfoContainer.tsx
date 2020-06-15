@@ -1,13 +1,46 @@
-import React   from "react";
+import React, { ComponentProps }  from "react";
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
+import { AppPath } from '../layout/appRoutes';
 
-const InfoContainer: React.FC = () => { 
+export const InfoContainer: React.FC<ComponentProps<any>> = ({onClick}) => { 
+    const handleButtonClick = (event: React.MouseEvent<any, any>) => {
+        if (onClick) {
+          onClick(event);
+        }
+      };
+    return(
+    <StyledContainer>
+            <StyledLink 
+            to={AppPath.CONTACTS}
+            onClick={handleButtonClick}
+            >Kontakt</StyledLink>
+            <StyledLink 
+            to={AppPath.IMPRESSION}
+            onClick={handleButtonClick}
+            >Impressum</StyledLink>
+            <DatenschutzLink 
+            to={AppPath.PRIVACY}
+            onClick={handleButtonClick}
+            >Datenschutz</DatenschutzLink>
+        </StyledContainer>
+    )
+}
+
+export const InfoContainerBlack: React.FC = (onClick) => { 
+    
     return(
         <StyledContainer>
-                <StyledLink to="/kontakt">Kontakt</StyledLink>
-                <StyledLink to="/impressum">Impressum</StyledLink>
-                <StyledLinkBlack to="/datenschutz">Datenschutz</StyledLinkBlack>
+                <StyledLink 
+                    style={{color: `${window.location.pathname=== '/kontakt' ? '#A83617':'#000000'}` }}
+                    to={AppPath.CONTACTS}
+                    >Kontakt</StyledLink>
+                    <StyledLink 
+                    style={{color: `${window.location.pathname=== '/impressum' ? '#A83617':'#000000'}` }}
+                    to={AppPath.IMPRESSION}>Impressum</StyledLink>
+                    <StyledLink 
+                    style={{color: `${window.location.pathname=== '/datenschutz' ? '#A83617':'#000000'}` }}
+                    to={AppPath.PRIVACY}>Datenschutz</StyledLink>
             </StyledContainer>
     )
 }
@@ -41,10 +74,9 @@ const StyledLink = styled(Link)`
     }
 `;
 
-const StyledLinkBlack = styled(StyledLink)`
+const DatenschutzLink = styled(StyledLink)`
     color: #000000;
     @media (max-width: 667px) {
         color: #FFFFFF;
     }
 `;
-export default InfoContainer;

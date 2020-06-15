@@ -1,18 +1,17 @@
 import React from 'react';
 import styled from 'styled-components';
 import Logo from '../components/Logo';
-import scores from '../assets/scores.svg'
-import scores2 from '../assets/scores2.svg'
 import LeftSection from "../components/LeftSection";
 import RightSection from "../components/RightSection";
 import ActionButton from '../components/Buttons/ActionButton'
-import Modal from '../components/Modal';
-import Image from "../components/Image";
 import MainContainer from "../components/MainContainer";
 import burger from '../assets/burger.svg'
 import {InfoContainer} from "../components/InfoContainer";
+import Modal from '../components/Modal';
+import Image from "../components/Image";
+import people from '../assets/people.svg'
 
-const Home: React.FC = () => {   
+const WhyUs: React.FC = () => {   
     const [open, setOpen] = React.useState<boolean | undefined>(undefined);
 
     const handleOpen = () => {
@@ -23,44 +22,21 @@ const Home: React.FC = () => {
         <MainContainer>
             <Logo/>
             <LeftSection>
-                <Image component={StyledImage} src={scores} alt="Scores image"/>
-                <Title>Ordnung ist der Schlüssel zum Erfolg</Title>
             </LeftSection>
             <RightSection>
                 <ActionButton src={burger} onClick={handleOpen}/>
                 <Modal isOpen={open} />
-                <Image component={StyledImage2} src={scores2} alt="Scores2 image"/>
+                <Image src={people} alt='people' component={StyledImage} />
             </RightSection>
             <InfoContainer/>
         </MainContainer>
     )
 };
 
-const Title = styled.div`
-    margin: 5vh 4vw;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 3vh;
-    line-height: 3.5vh;
-    text-transform: uppercase;
-    color: #FFFFFF;
-`;
 const StyledImage = styled.img`
-    margin: 25vh auto 0;    
+    margin: 26vh auto;   
     display: block;
-    width: 262.2px;
-    height: 372.04px;
-    @media (max-height: 720px){
-        height: 297px;
-    }
+    width: 28vw;
+    height: 47.5vh;
 `;
-const StyledImage2 = styled(StyledImage)`
-    margin: 8vh auto 0;    
-    width: 401.43px;
-    height: 650.18px;
-    @media (max-height: 720px){
-        height: 520px;
-    }
-`;
-
-export default Home;
+export default WhyUs;

@@ -4,18 +4,24 @@ import './App.css';
 import { AppPath } from './layout/appRoutes';
 import { NotFound } from './pages/NotFound';
 import Home from './pages/Home'
+import WhyUs from './pages/WhyUs';
+import WhatWeOffer from './pages/WhatWeOffer';
+import AccountingCost from './pages/AccountingCost';
+import Contacts from './pages/Contacts';
+import Impression from './pages/Impression';
+import Privacy from './pages/Privacy';
 
 function App() {
   return (
     <BrowserRouter>
           <Switch>
                 <Route path={AppPath.ROOT} exact component={Home} />
-                {/* <Route path={AppPath.WHYUS} component={} />
-                <Route path={AppPath.WHATWEOFFER} component={} />
-                <Route path={AppPath.ACCOUNTINGCOST} component={} />
-                <Route path={AppPath.CONTACTS} component={} />
-                <Route path={AppPath.IMPRESSION} component={} />
-                <Route path={AppPath.PRIVACY} component={} /> */}
+                <Route path={AppPath.WHYUS} component={WhyUs} />
+                <Route path={AppPath.WHATWEOFFER} component={WhatWeOffer} />
+                <Route path={AppPath.ACCOUNTINGCOST} component={AccountingCost} />
+                <Route path={AppPath.CONTACTS} component={Contacts} />
+                <Route path={AppPath.IMPRESSION} component={Impression} />
+                <Route path={AppPath.PRIVACY} component={Privacy} />
                 <Route component={NotFound} />
             </Switch>
       </BrowserRouter>

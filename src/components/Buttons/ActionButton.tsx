@@ -19,6 +19,7 @@ const ActionButton: React.FC<ComponentProps<any>> = ({src, onClick, ...rest}) =>
 };
 
 const ButtonWrapper = styled.div`
+margin: 4vh 3vh;
 position: absolute;
 display: flex;
 right: 0;

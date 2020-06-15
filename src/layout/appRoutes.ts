@@ -5,5 +5,5 @@ export const AppPath = {
   ACCOUNTINGCOST: '/was-kostet-die',
   CONTACTS: '/kontakt',
   IMPRESSION: '/impressum',
-  PRIVACY: 'datenschutz',
+  PRIVACY: '/datenschutz',
 };
