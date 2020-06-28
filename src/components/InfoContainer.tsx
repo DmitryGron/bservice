@@ -76,7 +76,7 @@ const StyledLink = styled(Link)`
 
 const DatenschutzLink = styled(StyledLink)`
     color: #000000;
-    @media (max-width: 667px) {
+    @media (max-width: 900px) {
         color: #FFFFFF;
     }
 `;

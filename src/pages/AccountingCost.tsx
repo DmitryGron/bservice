@@ -1,4 +1,5 @@
 import React from 'react';
+import styled from 'styled-components';
 import Logo from '../components/Logo';
 import LeftSection from "../components/LeftSection";
 import RightSection from "../components/RightSection";
@@ -7,6 +8,7 @@ import MainContainer from "../components/MainContainer";
 import burger from '../assets/burger.svg'
 import {InfoContainer} from "../components/InfoContainer";
 import Modal from '../components/Modal';
+import whiteBurger from '../assets/burger-white.svg'
 
 const AccountingCost: React.FC = () => {   
     const [open, setOpen] = React.useState<boolean | undefined>(undefined);
@@ -18,6 +20,7 @@ const AccountingCost: React.FC = () => {
     return (
         <MainContainer>
             <Logo/>
+            <ActionButtonWhite src={whiteBurger} onClick={handleOpen}/>
             <LeftSection>
             </LeftSection>
             <RightSection>
@@ -28,4 +31,11 @@ const AccountingCost: React.FC = () => {
         </MainContainer>
     )
 };
+
+const ActionButtonWhite = styled(ActionButton)`
+    display: none;
+    @media (max-width: 900px) {
+        display: flex;
+    }
+`;
 export default AccountingCost;

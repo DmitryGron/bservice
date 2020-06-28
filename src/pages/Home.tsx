@@ -10,6 +10,8 @@ import Modal from '../components/Modal';
 import Image from "../components/Image";
 import MainContainer from "../components/MainContainer";
 import burger from '../assets/burger.svg'
+import whiteBurger from '../assets/burger-white.svg'
+
 import {InfoContainer} from "../components/InfoContainer";
 
 const Home: React.FC = () => {   
@@ -22,6 +24,7 @@ const Home: React.FC = () => {
     return (
         <MainContainer>
             <Logo/>
+            <ActionButtonWhite src={whiteBurger} onClick={handleOpen}/>
             <LeftSection>
                 <Image component={StyledImage} src={scores} alt="Scores image"/>
                 <Title>Ordnung ist der Schlüssel zum Erfolg</Title>
@@ -37,7 +40,7 @@ const Home: React.FC = () => {
 };
 
 const Title = styled.div`
-    margin: 5vh 4vw;
+    margin: 5vh auto;
     font-style: normal;
     font-weight: 600;
     font-size: 3vh;
@@ -55,7 +58,7 @@ const StyledImage = styled.img`
     }
 `;
 const StyledImage2 = styled(StyledImage)`
-    margin: 8vh auto 0;    
+    margin: 5vh auto 0;    
     width: 401.43px;
     height: 650.18px;
     @media (max-height: 720px){
@@ -63,4 +66,10 @@ const StyledImage2 = styled(StyledImage)`
     }
 `;
 
+const ActionButtonWhite = styled(ActionButton)`
+    display: none;
+    @media (max-width: 900px) {
+        display: flex;
+    }
+`;
 export default Home;

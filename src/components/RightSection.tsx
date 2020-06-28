@@ -17,6 +17,9 @@ const StyledSection = styled.div`
 	margin:0;
 	padding:0;
     box-sizing: border-box;    
+    @media (max-width: 900px) {
+        display: none;
+    }
 `;
 
 export default RightSection;

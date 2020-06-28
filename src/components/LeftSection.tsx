@@ -17,7 +17,7 @@ const StyledSection = styled.div`
     box-sizing: border-box;
     margin:0;
     padding:0;
-    @media (max-width: 667px) {
+    @media (max-width: 900px) {
         width: 100%;
     }
 `;

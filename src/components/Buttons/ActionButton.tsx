@@ -1,8 +1,8 @@
 import React, { ComponentProps }  from "react";
 import styled from 'styled-components';
-import { IconButton, Tooltip } from '@material-ui/core';
+import { IconButton } from '@material-ui/core';
 
-const ActionButton: React.FC<ComponentProps<any>> = ({src, onClick, ...rest}) => { 
+const ActionButton: React.FC<ComponentProps<any>> = ({src, anotherSrc, onClick, ...rest}) => { 
 
     const handleButtonClick = (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
         if (onClick) {
@@ -11,9 +11,7 @@ const ActionButton: React.FC<ComponentProps<any>> = ({src, onClick, ...rest}) =>
       };  
     return(
         <ButtonWrapper>
-            <Tooltip title="Menu">
                 <IconButton {...rest} onClick={handleButtonClick}><img src={src} alt='burger-btn'/></IconButton>
-            </Tooltip>
         </ButtonWrapper>
     )
 };

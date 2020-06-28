@@ -1,6 +1,6 @@
 export const AppPath = {
   ROOT: '/',
-  WHYUS: '/warun-bei-uns',
+  WHYUS: '/warum-bei-uns',
   WHATWEOFFER: '/was-bieten-wir',
   ACCOUNTINGCOST: '/was-kostet-die',
   CONTACTS: '/kontakt',

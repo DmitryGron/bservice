@@ -7,6 +7,7 @@ import LeftSection from "./LeftSection";
 import RightSection from "./RightSection";
 import ActionButton from '../components/Buttons/ActionButton'
 import close from '../assets/close.svg'
+import closeWhite from '../assets/close-white.svg'
 import question from '../assets/question.svg'
 import Image from "../components/Image";
 import {InfoContainer} from "../components/InfoContainer";
@@ -30,6 +31,7 @@ const Modal: React.FC<ComponentProps<any>> = ({isOpen}) => {
         <Dialog fullScreen onClose={handleClose} aria-labelledby="simple-dialog-title" open={open}>
             <MainContainer>
                 <Logo/>
+                <ActionButtonWhite src={closeWhite} onClick={handleClose}/>
                 <LeftSection>
                     <TextSection>
                         <Title>BUCHHALTUNG FÜR DIE PFLEGE  </Title>
@@ -59,14 +61,13 @@ const TextSection = styled.div`
     display: flex;
     flex-direction: column;
 `;
-export const Title = styled.div`
+const Title = styled.div`
     margin-bottom: 5vh;
     font-style: normal;
     font-weight: 600;
     font-size: 48px;
     line-height: 52px;
     color: #FFFFFF;
-
 `;
 const StyledLink = styled(Link)`
     font-style: normal;
@@ -81,5 +82,11 @@ const Text = styled.div`
     font-weight: 900;
     font-size: 18px;
     line-height: 26px; 
+`;
+const ActionButtonWhite = styled(ActionButton)`
+    display: none;
+    @media (max-width: 900px) {
+        display: flex;
+    }
 `;
 export default Modal;
