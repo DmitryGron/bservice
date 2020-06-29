@@ -9,6 +9,9 @@ import burger from '../assets/burger.svg'
 import {InfoContainer} from "../components/InfoContainer";
 import Modal from '../components/Modal';
 import whiteBurger from '../assets/burger-white.svg'
+import Image from "../components/Image";
+import whatWeOffer from '../assets/what-we-offer.svg'
+import whatWeOfferWhite from '../assets/what-we-offer-white.svg'
 
 const WhatWeOffer: React.FC = () => {   
     const [open, setOpen] = React.useState<boolean | undefined>(undefined);
@@ -21,6 +24,10 @@ const WhatWeOffer: React.FC = () => {
         <MainContainer>
             <Logo/>
             <ActionButtonWhite src={whiteBurger} onClick={handleOpen}/>
+        <StyledContainer>
+        <Image component={StyledImage} src={whatWeOffer} alt="what-we-offer-image"/>
+        <Image component={ImageWhite} src={whatWeOfferWhite} alt="what-we-offer-image"/>
+        </StyledContainer>
             <LeftSection>
             </LeftSection>
             <RightSection>
@@ -36,6 +43,31 @@ const ActionButtonWhite = styled(ActionButton)`
     display: none;
     @media (max-width: 900px) {
         display: flex;
+    }
+`;
+
+const StyledContainer = styled.div`
+    position:absolute;
+    display: flex;
+    flex-direction: row;
+    left: 10%;
+`;
+const StyledImage = styled.img`
+    margin-top: 21vh;
+    width: 80vw;
+    display: block;
+    @media (max-width: 900px) {
+        display: none;
+    }
+`;
+
+const ImageWhite = styled.img`
+    margin-top: 21vh;
+    width: 80vw;
+    display: none;
+    @media (max-width: 900px) {
+        margin-top: 30vh;
+        display: block;
     }
 `;
 export default WhatWeOffer;

@@ -28,7 +28,12 @@ const Modal: React.FC<ComponentProps<any>> = ({isOpen}) => {
       };
 
     return(
-        <Dialog fullScreen onClose={handleClose} aria-labelledby="simple-dialog-title" open={open}>
+        <Dialog fullScreen onClose={handleClose} open={open}
+        PaperProps={{
+            style: {
+            overflow: 'hidden',
+            },
+        }}>
             <MainContainer>
                 <Logo/>
                 <ActionButtonWhite src={closeWhite} onClick={handleClose}/>
@@ -51,7 +56,7 @@ const Modal: React.FC<ComponentProps<any>> = ({isOpen}) => {
 };
 
 const StyledImage = styled.img`
-    margin: 26vh auto;   
+    margin: 30vh auto;   
     display: block;
     width: 28vw;
     height: 47.5vh;
@@ -89,4 +94,5 @@ const ActionButtonWhite = styled(ActionButton)`
         display: flex;
     }
 `;
+
 export default Modal;

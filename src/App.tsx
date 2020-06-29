@@ -8,7 +8,7 @@ import WhyUs from './pages/WhyUs';
 import WhatWeOffer from './pages/WhatWeOffer';
 import AccountingCost from './pages/AccountingCost';
 import Contacts from './pages/Contacts';
-import Impression from './pages/Impression';
+import Impressions from './pages/Impressions';
 import Privacy from './pages/Privacy';
 
 function App() {
@@ -20,7 +20,7 @@ function App() {
                 <Route path={AppPath.WHATWEOFFER} component={WhatWeOffer} />
                 <Route path={AppPath.ACCOUNTINGCOST} component={AccountingCost} />
                 <Route path={AppPath.CONTACTS} component={Contacts} />
-                <Route path={AppPath.IMPRESSION} component={Impression} />
+                <Route path={AppPath.IMPRESSIONS} component={Impressions} />
                 <Route path={AppPath.PRIVACY} component={Privacy} />
                 <Route component={NotFound} />
             </Switch>

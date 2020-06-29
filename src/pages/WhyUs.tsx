@@ -1,5 +1,5 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { keyframes } from "styled-components";
 import Logo from '../components/Logo';
 import LeftSection from "../components/LeftSection";
 import RightSection from "../components/RightSection";
@@ -8,8 +8,7 @@ import MainContainer from "../components/MainContainer";
 import burger from '../assets/burger.svg'
 import {InfoContainer} from "../components/InfoContainer";
 import Modal from '../components/Modal';
-import Image from "../components/Image";
-import people from '../assets/people.svg'
+import { ReactComponent as People } from '../assets/people.svg'
 import whiteBurger from '../assets/burger-white.svg'
 
 const WhyUs: React.FC = () => {   
@@ -39,12 +38,22 @@ const WhyUs: React.FC = () => {
             <RightSection>
                 <ActionButton src={burger} onClick={handleOpen}/>
                 <Modal isOpen={open} />
-                <Image src={people} alt='people' component={StyledImage} />
+                <StyledImage/>
             </RightSection>
             <InfoContainer/>
         </MainContainer>
     )
 };
+
+const rotate = keyframes`
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+`;
+
+const rotateLeft = keyframes`
+    from { transform: rotate(0deg); }
+    to { transform: rotate(-360deg); }
+`;
 
 const TextSection = styled.div`
     margin: 30vh 6vw;
@@ -65,11 +74,22 @@ const Text = styled.div`
     font-weight: normal;
     font-size: 18px; 
 `;
-const StyledImage = styled.img`
+const StyledImage = styled(People)`
     margin: 26vh auto;   
     display: block;
-    width: 28vw;
-    height: 47.5vh;
+    width: 35vw;
+    height: auto;
+    .gear {
+        animation: ${rotate} 5s linear infinite;
+        transform-box: fill-box;
+        transform-origin: center;
+    }
+
+    .gear1 {
+        animation: ${rotateLeft} 5s linear infinite;
+        transform-box: fill-box;
+        transform-origin: center;
+    }
 `;
 const ActionButtonWhite = styled(ActionButton)`
     display: none;

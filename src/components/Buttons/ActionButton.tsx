@@ -8,7 +8,7 @@ const ActionButton: React.FC<ComponentProps<any>> = ({src, anotherSrc, onClick, 
         if (onClick) {
           onClick(event);
         }
-      };  
+      };
     return(
         <ButtonWrapper>
                 <IconButton {...rest} onClick={handleButtonClick}><img src={src} alt='burger-btn'/></IconButton>

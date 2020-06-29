@@ -16,7 +16,7 @@ export const InfoContainer: React.FC<ComponentProps<any>> = ({onClick}) => {
             onClick={handleButtonClick}
             >Kontakt</StyledLink>
             <StyledLink 
-            to={AppPath.IMPRESSION}
+            to={AppPath.IMPRESSIONS}
             onClick={handleButtonClick}
             >Impressum</StyledLink>
             <DatenschutzLink 
@@ -37,7 +37,7 @@ export const InfoContainerBlack: React.FC = (onClick) => {
                     >Kontakt</StyledLink>
                     <StyledLink 
                     style={{color: `${window.location.pathname=== '/impressum' ? '#A83617':'#000000'}` }}
-                    to={AppPath.IMPRESSION}>Impressum</StyledLink>
+                    to={AppPath.IMPRESSIONS}>Impressum</StyledLink>
                     <StyledLink 
                     style={{color: `${window.location.pathname=== '/datenschutz' ? '#A83617':'#000000'}` }}
                     to={AppPath.PRIVACY}>Datenschutz</StyledLink>
@@ -45,7 +45,7 @@ export const InfoContainerBlack: React.FC = (onClick) => {
     )
 }
 const StyledContainer = styled.div`
-    position:absolute;
+    position: fixed;
     display: flex;
     flex-direction: row;
     bottom: 0;

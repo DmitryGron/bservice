@@ -4,6 +4,6 @@ export const AppPath = {
   WHATWEOFFER: '/was-bieten-wir',
   ACCOUNTINGCOST: '/was-kostet-die',
   CONTACTS: '/kontakt',
-  IMPRESSION: '/impressum',
+  IMPRESSIONS: '/impressum',
   PRIVACY: '/datenschutz',
 };
