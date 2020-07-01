@@ -11,12 +11,12 @@ import PrivacyContent from '../components/PrivacyContent';
 
 const Privacy: React.FC = () => {  
     const [open, setOpen] = React.useState<boolean | undefined>(undefined);
+    const [goingUp, setGoingUp] = useState(true);
     const handleOpen = () => {
         open === undefined ? setOpen(true) : setOpen(!open);
     };
     const prevScrollY = useRef(0);
 
-    const [goingUp, setGoingUp] = useState(false);
   
     useEffect(() => {
       const handleScroll = () => {
@@ -40,7 +40,7 @@ const Privacy: React.FC = () => {
 
     return (
         <MainContainer>
-            <Header style={{transition: `${goingUp ? 'all .5s ease-in-out' : '' }`, display: `${goingUp ? 'flex' : 'none' }` }}>
+            <Header style={{display: `${goingUp ? 'flex' : 'none' }` }}>
                 <StyledLogo red={true}/>
                 <ActionButton src={burger} onClick={handleOpen}/>
             </Header> 
@@ -52,22 +52,31 @@ const Privacy: React.FC = () => {
                 </TextSection>
                 <StyledImage/>
             </Wrapper>
-            <InfoContainerBlack/>
+            <Footer style={{display: `${goingUp ? 'flex' : 'none' }` }}>
+                <InfoContainerBlack/>
+            </Footer>
         </MainContainer>
     )
 };
 
 const StyledImage = styled(PrivacyImg)`
-    margin-left: auto;
-    order: 2;
-    margin-top: 20vh;
-    margin-right: 10vw;
-    display: block;
-    float: right;
+    margin-top: 17vh;
+    margin-right: 12vw;
+    position: absolute;
+    display: flex;
+    right: 0;
     width: 30vw;
     height: auto;
     @media (max-width: 900px) {
         display: none;
+    }
+    @media (max-width: 1300px) {
+        margin-right: 12vw;
+        margin-top: 30vh;
+    }
+    @media (max-width: 1100px) {
+        margin-right: 10vw;
+        margin-top: 40vh;
     }
 `;
 const TextSection = styled.div`
@@ -77,6 +86,7 @@ const TextSection = styled.div`
     flex-direction: column;
 `;
 const Title = styled.div`
+    margin-bottom: 5vh;
     font-style: normal;
     font-weight: 600;
     font-size: 48px;
@@ -86,12 +96,6 @@ const Title = styled.div`
 const StyledLogo = styled(Logo)`
     position: inherit
 `;
-
-const Wrapper = styled.div`
-    display: flex;
-    align-items: flex-start;
-    flex-wrap: wrap;
-`;
 const Header = styled.div`
     display: flex;
     position: fixed;
@@ -99,6 +103,22 @@ const Header = styled.div`
     background-color: #f6f6fa;;
     color: #fff;
     height: 18vh;
+    z-index: 99;
 `;
-
+const Footer = styled.div`
+    display: flex;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #f6f6fa;;
+    color: #fff;
+    text-align: center;
+    height: 10vh;
+`;
+const Wrapper = styled.div`
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+`;
 export default Privacy;
