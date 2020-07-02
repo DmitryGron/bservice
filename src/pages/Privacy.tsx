@@ -1,5 +1,5 @@
 import React, {useEffect, useRef, useState} from "react";
-import styled, { keyframes } from "styled-components";
+import styled from "styled-components";
 import Logo from '../components/Logo';
 import ActionButton from '../components/Buttons/ActionButton'
 import MainContainer from "../components/MainContainer";
@@ -100,7 +100,7 @@ const Header = styled<any>('div')`
     display: flex;
     position: fixed;
     width: 100%;
-    background-color: #f6f6fa;;
+    background-color: #f6f6fa;
     color: #fff;
     height: 18vh;
     z-index: 99;
@@ -120,7 +120,7 @@ const Footer= styled.div`
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: #f6f6fa;;
+    background-color: #f6f6fa;
     color: #fff;
     text-align: center;
     height: 10vh;

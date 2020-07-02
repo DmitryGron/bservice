@@ -77,7 +77,7 @@ const Title = styled.div`
 const StyledLink = styled(Link)`
     font-style: normal;
     font-weight: normal;
-    font-size: 18px;
+    font-size: 2vh;
     line-height: 145.5%;
     color: #FFFFFF;
 `;
@@ -85,7 +85,7 @@ const Text = styled.div`
     margin: 2vh 0;
     font-family: Montserrat;
     font-weight: 900;
-    font-size: 18px;
+    font-size: 2vh;
     line-height: 26px; 
 `;
 const ActionButtonWhite = styled(ActionButton)`

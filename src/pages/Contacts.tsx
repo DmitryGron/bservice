@@ -74,7 +74,7 @@ const Text = styled.div`
     font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
-    font-size: 18px;
+    font-size: 2vh;
     color: #000000;
 `;
 const Wrapper = styled.div`

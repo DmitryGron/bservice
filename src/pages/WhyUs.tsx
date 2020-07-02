@@ -24,14 +24,18 @@ const WhyUs: React.FC = () => {
             <ActionButtonWhite src={whiteBurger} onClick={handleOpen}/>
             <LeftSection>
                 <TextSection>
-                    <Title>WAS KOSTET DIE BUCHHALTUNG?</Title>
+                    <Title>WARUM BEI UNS?</Title>
                     <Text>
-                    Unsere Honorare richten sich wie überall nach dem Aufwand und den tatsächlich in Anspruch genommenen Leistungen. Eine gut vorbereitete Buchhaltung mit vollständigen Belegen spart jedoch Zeit und Kosten.
-                    Gerne schauen wir im Rahmen eines Probemonats, welchen Aufwand die Buchhaltung Ihres Pflegedienstes erfordert. Danach unterbreiten wir Ihnen ein Angebot über die monatliche Pauschale.
+                    Unser Unternehmen verbindet langjährige Erfahrung auf dem Gebiet der Buchhaltung 
+                    mit den besonderen Anforderungen eines Pflegedienstes.
                     <p/>
-                    Vereinbaren Sie noch heute einen Termin für eine kostenlose und unverbindliche Erstberatung.
+                    <b>BUCHHALTUNG SERVICE</b> ging aus unserem Ambulanten Pflegedienst WARMES HERZ hervor.
+                    Wir kennen uns daher mit den Besonderheiten der Pflege bestens aus.
                     <p/>
-                    <b>WIR SCHAFFEN ORDNUNG!</b>
+                    <b>BUCHHALTUNG SERVICE</b> garantiert Ihnen eine zuverlässige Buchhaltung, damit 
+                    Sie für dietäglichen Herausforderungen der Pflege denRücken frei haben. 
+                    <p/>
+                    <b>AUS DER PFLEGE, FÜR DIE PFLEGE!</b>
                     </Text>
                 </TextSection> 
             </LeftSection>
@@ -72,7 +76,7 @@ const Text = styled.div`
     font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
-    font-size: 18px; 
+    font-size: 2vh; 
 `;
 const StyledImage = styled(People)`
     margin: 26vh auto;   

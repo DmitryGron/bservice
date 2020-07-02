@@ -50,14 +50,14 @@ const rotate = keyframes`
     to { transform: rotate(360deg); }
 `;
 const TextSection = styled.div`
-    margin: 30vh 6vw;
+    margin: 25vh 6vw;
     display: flex;
     flex-direction: column;
 `;
 const Title = styled.div`
     font-style: normal;
     font-weight: 600;
-    font-size: 48px;
+    font-size: 6vh;
     line-height: 52px;
     color: #FFFFFF;
 `;
@@ -66,7 +66,7 @@ const Text = styled.div`
     font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
-    font-size: 18px; 
+    font-size: 2vh; 
 `;
 const ActionButtonWhite = styled(ActionButton)`
     display: none;
@@ -75,9 +75,9 @@ const ActionButtonWhite = styled(ActionButton)`
     }
 `;
 const StyledImage = styled(Costs)`
-    margin: 26vh auto;   
+    margin: 25vh auto;   
     display: block;
-    width: 35vw;
+    width: 40vw;
     height: auto;
     .gear {
         animation: ${rotate} 5s linear infinite;

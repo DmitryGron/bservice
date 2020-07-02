@@ -32,11 +32,11 @@ const Impressions: React.FC = () => {
                     Bürgerheimstr. 4<br/>
                     10365 Berlin
                     <p/>
-                    Telefon: <b>0152 / 178 40 168</b><br/>
-                    Telefax:  <b>030 / 290 48 188</b>
+                    Telefon: <b><a href="tel:+015217840168" style={{textDecoration: 'none', color: 'black'}}>0152</a> / <a href="tel:17840168" style={{textDecoration: 'none', color: 'black'}}>178 40 168</a></b><br/>
+                    Telefax: <b><a href="tel:+030290 48 188" style={{textDecoration: 'none', color: 'black'}}>030</a> / <a href="tel:29048188" style={{textDecoration: 'none', color: 'black'}}>290 48 188</a></b>
                     <p/>
-                    <b>E-Мail</b>: info@buchhaltung-service.berlin<br/>
-                    <b>Web</b>: www.buchhaltung-service.berlin
+                    <b>E-Мail</b>: <a href="mailto:info@buchhaltung-service.berlin" style={{textDecoration: 'none', color: 'black'}}>info@buchhaltung-service.berlin</a><br/>
+                    <b>Web</b>: <a href="https://www.buchhaltung-service.berlin" style={{textDecoration: 'none', color: 'black'}}>www.buchhaltung-service.berlin</a>
                     <p/>
                     <b>Angaben zur Tätigkeit:</b> <br/>
                     Die Serviceleistungen in Steuersachen umfasst im <br/> 
@@ -53,7 +53,7 @@ const Impressions: React.FC = () => {
             <RightText>
             <b>Designer Team:</b>
             <p/>
-            ALESSIA KOSTENKO<br/>
+            <a href="mailto:a.k.buchhaltungsservice@gmail.com"  style={{textDecoration: 'none', color: 'black'}}>ALESSIA KOSTENKO</a><br/>
             Idee, Konzept, Recherchen, Bilder 
             <p/>
             ALINA KREZ<br/>
@@ -62,7 +62,7 @@ const Impressions: React.FC = () => {
             KATRIN ARABADZHI<br/>
             Designer/ UI/UX /Web&Mobile:  Grafik- und Bildbearbeitung,  Seitengestaltung
             <p/>
-            DMYTRO SKUMIN<br/>
+            <a href="https://linkedin.com/in/dmitryskumin"  style={{textDecoration: 'none', color: 'black'}}>DMYTRO SKUMIN</a> <br/>
             Technische Umsetzung 
             </RightText>
             </Wrapper>
@@ -107,7 +107,7 @@ const Text = styled.div`
     font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
-    font-size: 2vh;
+    font-size: 1.5vh;
     color: #000000;
 `;
 const RightText = styled.div`

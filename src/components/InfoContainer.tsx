@@ -66,9 +66,10 @@ const StyledLink = styled(Link)`
     font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
-    font-size: 16px;
+    font-size: 1.5vh;
     line-height: 23px;
     color: #FFFFFF;
+    text-decoration: none;
     @media (max-width: 667px) {
         margin: 5%;
     }
