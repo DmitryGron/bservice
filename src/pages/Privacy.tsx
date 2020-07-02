@@ -1,5 +1,5 @@
 import React, {useEffect, useRef, useState} from "react";
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import Logo from '../components/Logo';
 import ActionButton from '../components/Buttons/ActionButton'
 import MainContainer from "../components/MainContainer";
@@ -8,6 +8,7 @@ import {InfoContainerBlack} from "../components/InfoContainer";
 import Modal from '../components/Modal';
 import { ReactComponent as PrivacyImg } from '../assets/privacy.svg'
 import PrivacyContent from '../components/PrivacyContent';
+
 
 const Privacy: React.FC = () => {  
     const [open, setOpen] = React.useState<boolean | undefined>(undefined);
@@ -21,7 +22,6 @@ const Privacy: React.FC = () => {
     useEffect(() => {
       const handleScroll = () => {
         const currentScrollY = window.scrollY;
-        console.log('currentScrollY', currentScrollY)
         if (prevScrollY.current < currentScrollY && goingUp) {
           setGoingUp(false);
         }
@@ -30,7 +30,6 @@ const Privacy: React.FC = () => {
         }
   
         prevScrollY.current = currentScrollY;
-        console.log(goingUp, currentScrollY);
       };
   
       window.addEventListener("scroll", handleScroll);
@@ -40,7 +39,7 @@ const Privacy: React.FC = () => {
 
     return (
         <MainContainer>
-            <Header style={{display: `${goingUp ? 'flex' : 'none' }` }}>
+            <Header className={goingUp ? 'fadeIn' : 'fadeOut'}>
                 <StyledLogo red={true}/>
                 <ActionButton src={burger} onClick={handleOpen}/>
             </Header> 
@@ -52,7 +51,7 @@ const Privacy: React.FC = () => {
                 </TextSection>
                 <StyledImage/>
             </Wrapper>
-            <Footer style={{display: `${goingUp ? 'flex' : 'none' }` }}>
+            <Footer className={goingUp ? 'fadeIn' : 'fadeOut'}>
                 <InfoContainerBlack/>
             </Footer>
         </MainContainer>
@@ -60,12 +59,12 @@ const Privacy: React.FC = () => {
 };
 
 const StyledImage = styled(PrivacyImg)`
-    margin-top: 17vh;
-    margin-right: 12vw;
+    margin-top: 20vh;
+    margin-right: 15vw;
     position: absolute;
     display: flex;
     right: 0;
-    width: 30vw;
+    width: 25vw;
     height: auto;
     @media (max-width: 900px) {
         display: none;
@@ -96,7 +95,8 @@ const Title = styled.div`
 const StyledLogo = styled(Logo)`
     position: inherit
 `;
-const Header = styled.div`
+
+const Header = styled<any>('div')`
     display: flex;
     position: fixed;
     width: 100%;
@@ -104,8 +104,17 @@ const Header = styled.div`
     color: #fff;
     height: 18vh;
     z-index: 99;
+
+    &.fadeIn {
+        transform: translateY(0);
+        transition: .4s ease-in-out;
+    }
+    &.fadeOut {
+        transform: translateY(-100%);
+        transition: .4s ease-in-out;
+    }
 `;
-const Footer = styled.div`
+const Footer= styled.div`
     display: flex;
     position: fixed;
     left: 0;
@@ -115,8 +124,18 @@ const Footer = styled.div`
     color: #fff;
     text-align: center;
     height: 10vh;
+
+    &.fadeIn {
+        transform: translateY(0);
+        transition: .4s ease-in-out;
+    }
+    &.fadeOut {
+        transform: translateY(100%);
+        transition: .4s ease-in-out;
+    }
 `;
 const Wrapper = styled.div`
+    position: inherit;
     display: flex;
     align-items: flex-start;
     flex-wrap: wrap;
