@@ -56,13 +56,13 @@ const Modal: React.FC<ComponentProps<any>> = ({isOpen}) => {
 };
 
 const StyledImage = styled.img`
-    margin: 30vh auto;   
+    margin: 25vh auto;   
     display: block;
-    width: 28vw;
+    width: 30vw;
     height: 47.5vh;
 `;
 const TextSection = styled.div`
-    margin: 35vh 6vw;
+    margin: 30vh 6vw;
     display: flex;
     flex-direction: column;
 `;

@@ -26,8 +26,11 @@ const AccountingCost: React.FC = () => {
             <TextSection>
                     <Title> WAS KOSTETDIE BUCHHALTUNG?</Title>
                     <Text>
-                        Unsere Honorare richten sich wie überall nach dem Aufwand und den tatsächlich in Anspruch genommenen Leistungen. Eine gut vorbereitete Buchhaltung mit vollständigen Belegen spart jedoch Zeit und Kosten.
-                        Gerne schauen wir im Rahmen eines Probemonats, welchen Aufwand die Buchhaltung Ihres Pflegedienstes erfordert. Danach unterbreiten wir Ihnen ein Angebot über die monatliche Pauschale.
+                        Unsere Honorare richten sich wie überall nach dem Aufwand und den tatsächlich in Anspruch genommenen Leistungen. 
+                        Eine gut vorbereitete Buchhaltung mit vollständigen Belegen spart jedoch Zeit und Kosten.
+                        <p/>
+                        Gerne schauen wir im Rahmen eines Probemonats, welchen Aufwand die Buchhaltung Ihres Pflegedienstes erfordert. 
+                        Danach unterbreiten wir Ihnen ein Angebot über die monatliche Pauschale.
                         <p/>
                         Vereinbaren Sie noch heute einen Termin für eine kostenlose und unverbindliche Erstberatung.
                         <p/>
@@ -50,7 +53,7 @@ const rotate = keyframes`
     to { transform: rotate(360deg); }
 `;
 const TextSection = styled.div`
-    margin: 25vh 6vw;
+    margin: 30vh 6vw;
     display: flex;
     flex-direction: column;
 `;
