@@ -57,6 +57,8 @@ const PrivacyContent: React.FC = () => {
             Wir verwenden in dieser Datenschutzerklärung unter anderem die folgenden Begriffe:
           </LeftText>
           <RightText>
+            <br/>
+            <br/>
             <h4>a) Personenbezogene Daten</h4>
             Personenbezogene Daten sind alle Informationen, die sich auf eine identifizierte oder
             identifizierbare natürliche Person (im Folgenden „betroffene Person“) beziehen. Als
@@ -205,6 +207,9 @@ const PrivacyContent: React.FC = () => {
           informationstechnologischen Systeme dienen.
           </LeftText>
           <RightText>
+          <br/>
+          <br/>
+          <br/>
           Bei der Nutzung dieser allgemeinen Daten und Informationen zieht die Buchhaltung
           Service Berlin keine Rückschlüsse auf die betroffene Person. Diese Informationen
           werden vielmehr benötigt, um (1) die Inhalte unserer Internetseite korrekt
@@ -231,6 +236,10 @@ const PrivacyContent: React.FC = () => {
           Europäischen Richtlinien- und Verordnungsgeber oder einen anderen Gesetzgeber
           </LeftText>
           <RightText>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
           in Gesetzen oder Vorschriften, welchen der für die Verarbeitung Verantwortliche
           unterliegt, vorgesehen wurde.<br/>
           Entfällt der Speicherungszweck oder läuft eine vom Europäischen Richtlinien- und
@@ -252,6 +261,8 @@ const PrivacyContent: React.FC = () => {
             Mitarbeiter des für die Verarbeitung Verantwortlichen wenden.
           </LeftText>
           <RightText>
+          <br/>
+          <br/>
             <h4>b) Recht auf Auskunft</h4>
             Jede von der Verarbeitung personenbezogener Daten betroffene Person hat das
             vom Europäischen Richtlinien- und Verordnungsgeber gewährte Recht, jederzeit von

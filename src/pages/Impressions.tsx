@@ -107,7 +107,7 @@ const Text = styled.div`
     font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
-    font-size: 1.5vh;
+    font-size: 1.7vh;
     color: #000000;
 `;
 const RightText = styled.div`
