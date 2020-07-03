@@ -60,7 +60,7 @@ const TextSection = styled.div`
 const Title = styled.div`
     font-style: normal;
     font-weight: 600;
-    font-size: 6vh;
+    font-size: 48px;;
     line-height: 52px;
     color: #FFFFFF;
 `;
