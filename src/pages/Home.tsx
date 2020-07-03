@@ -58,7 +58,7 @@ const StyledImage = styled.img`
     }
 `;
 const StyledImage2 = styled(StyledImage)`
-    margin: 5vh auto 0;    
+    margin: 8vh auto 0;    
     width: 401.43px;
     height: 650.18px;
     @media (max-height: 720px){
