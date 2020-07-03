@@ -91,7 +91,7 @@ const TextSection = styled.div`
     flex-direction: column;
     max-width: 20vw;
 
-    @media (max-width: 900px) {
+    @media (max-width: 1160px) {
         max-width: 75vw;
     }
 `;
@@ -118,7 +118,7 @@ const RightText = styled.div`
     order: 3;
     float: right;
     max-width: 12vw;
-    @media (max-width: 900px) {
+    @media (max-width: 1160px) {
         display: none;
     }
 `;
