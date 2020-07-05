@@ -75,6 +75,8 @@ const Text = styled.div`
     font-weight: normal;
     font-size: 2.5vh;
     color: #000000;
+    line-height: 3vh;
+
 `;
 const Wrapper = styled.div`
     display: flex

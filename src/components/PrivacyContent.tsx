@@ -640,7 +640,7 @@ const TopText = styled.div`
     font-size: 1.8vh;
     color: #000000;
     max-width: 45vw;
-    line-height: 20px;
+    line-height: 2.5vh;
     @media (max-width: 900px) {
       max-width: 85vw;
     }
@@ -653,7 +653,7 @@ const LeftText = styled.div`
     font-size: 1.8vh;
     color: #000000;
     max-width: 45vw;
-    line-height: 20px;
+    line-height: 2.5vh;
 `;
 const WideText = styled.div`
     margin: 2vh 0;
@@ -663,7 +663,7 @@ const WideText = styled.div`
     font-size: 1.8vh;
     color: #000000;
     max-width: 90%;
-    line-height: 20px;
+    line-height: 2.5vh;
 `;
 const RightText = styled.div`
     margin: 2vh 0 2vh 3vw;
@@ -672,7 +672,7 @@ const RightText = styled.div`
     font-weight: normal;
     font-size: 1.8vh;
     color: #000000;
-    line-height: 20px;
+    line-height: 2.5vh;
     max-width: 40vw;
 
 `;

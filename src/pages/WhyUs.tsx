@@ -77,6 +77,7 @@ const Text = styled.div`
     font-style: normal;
     font-weight: normal;
     font-size: 2vh; 
+    line-height: 2.5vh;
 `;
 const StyledImage = styled(People)`
     margin: 26vh auto;   

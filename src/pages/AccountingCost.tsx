@@ -70,6 +70,7 @@ const Text = styled.div`
     font-style: normal;
     font-weight: normal;
     font-size: 2vh; 
+    line-height: 2.5vh;
 `;
 const ActionButtonWhite = styled(ActionButton)`
     display: none;

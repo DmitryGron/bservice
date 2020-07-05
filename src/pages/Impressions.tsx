@@ -109,6 +109,7 @@ const Text = styled.div`
     font-weight: normal;
     font-size: 1.7vh;
     color: #000000;
+    line-height: 2.5vh;
 `;
 const RightText = styled.div`
     margin-top: 25vh;

@@ -105,7 +105,7 @@ const Text = styled.div`
     font-family: Montserrat;
     font-weight: 900;
     font-size: 2vh;
-    line-height: 26px; 
+    line-height: 2.5vh; 
 `;
 const ActionButtonWhite = styled(ActionButton)`
     display: none;
