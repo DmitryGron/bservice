@@ -17,6 +17,7 @@ export const LogoContainer = styled.a`
   height: 87px;
   margin: 40px 60px;
   z-index: 2;
+  background-size: 69px 175px;
   @media (max-height: 720px){
     margin: 32px 48px;
   }

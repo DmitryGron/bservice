@@ -1,5 +1,5 @@
 import React, {useEffect, ComponentProps }  from "react";
-import styled from 'styled-components';
+import styled, { keyframes } from "styled-components";
 import Dialog from '@material-ui/core/Dialog';
 import { Link } from 'react-router-dom';
 import MainContainer from "./MainContainer";
@@ -54,12 +54,27 @@ const Modal: React.FC<ComponentProps<any>> = ({isOpen}) => {
         </Dialog>
     )
 };
+const float = keyframes`
+    50% {
+     transform: translate(0, 20px);
+  }
+`;
+const rotate = keyframes`
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+`;
 
 const StyledImage = styled.img`
     margin: 25vh auto;   
     display: block;
     width: 30vw;
     height: 47.5vh;
+    .float {
+        animation: ${rotate} 5s linear infinite;
+        transform-box: fill-box;
+        transform-origin: center;
+        /* animation: ${float} 3s ease-out infinite; */
+    }
 `;
 const TextSection = styled.div`
     margin: 30vh 6vw;
@@ -75,11 +90,15 @@ const Title = styled.div`
     color: #FFFFFF;
 `;
 const StyledLink = styled(Link)`
+    text-decoration: none;
     font-style: normal;
     font-weight: normal;
     font-size: 2vh;
     line-height: 145.5%;
     color: #FFFFFF;
+    :hover {
+        text-decoration: underline;
+    }
 `;
 const Text = styled.div`
     margin: 2vh 0;

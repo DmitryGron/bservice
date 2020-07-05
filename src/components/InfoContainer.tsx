@@ -27,7 +27,7 @@ export const InfoContainer: React.FC<ComponentProps<any>> = ({onClick}) => {
     )
 }
 
-export const InfoContainerBlack: React.FC = (onClick) => { 
+export const InfoContainerBlack: React.FC = () => { 
     
     return(
         <StyledContainer>
@@ -58,7 +58,7 @@ const StyledContainer = styled.div`
     }
 `;
 const StyledLink = styled(Link)`
-    margin: 40px;
+    margin: 2vh 40px;;
     width: 64px;
     height: 23px;
     left: 500px;
@@ -66,7 +66,7 @@ const StyledLink = styled(Link)`
     font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
-    font-size: 1.5vh;
+    font-size: 2vh;
     line-height: 23px;
     color: #FFFFFF;
     text-decoration: none;

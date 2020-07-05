@@ -123,8 +123,8 @@ const Footer= styled.div`
     background-color: #f6f6fa;
     color: #fff;
     text-align: center;
-    height: 10vh;
-
+    height: 6vh;
+    
     &.fadeIn {
         transform: translateY(0);
         transition: .4s ease-in-out;
