@@ -51,18 +51,15 @@ const Title = styled.div`
 const StyledImage = styled.img`
     margin: 25vh auto 0;    
     display: block;
-    width: 262.2px;
-    height: 372.04px;
+    height: 45vh;
     @media (max-height: 720px){
-        height: 297px;
     }
 `;
 const StyledImage2 = styled(StyledImage)`
-    margin: 8vh auto 0;    
-    width: 401.43px;
-    height: 650.18px;
+    margin: 6vh auto 0;    
+    
+    height: 80vh;
     @media (max-height: 720px){
-        height: 520px;
     }
 `;
 
