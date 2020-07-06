@@ -32,26 +32,26 @@ const Impressions: React.FC = () => {
                     Bürgerheimstr. 4<br/>
                     10365 Berlin
                     <p/>
-                    Telefon: <b><a href="tel:+015217840168" style={{textDecoration: 'none', color: 'black'}}>0152</a> / <a href="tel:17840168" style={{textDecoration: 'none', color: 'black'}}>178 40 168</a></b><br/>
-                    Telefax: <b><a href="tel:+030290 48 188" style={{textDecoration: 'none', color: 'black'}}>030</a> / <a href="tel:29048188" style={{textDecoration: 'none', color: 'black'}}>290 48 188</a></b>
+                    Telefon: <StyledSpan><a href="tel:+015217840168" style={{textDecoration: 'none', color: 'black'}}>0152</a> / <a href="tel:17840168" style={{textDecoration: 'none', color: 'black'}}>178 40 168</a></StyledSpan><br/>
+                    Telefax: <StyledSpan><a href="tel:+030290 48 188" style={{textDecoration: 'none', color: 'black'}}>030</a> / <a href="tel:29048188" style={{textDecoration: 'none', color: 'black'}}>290 48 188</a></StyledSpan>
                     <p/>
-                    <b>E-Мail</b>: <a href="mailto:info@buchhaltung-service.berlin" style={{textDecoration: 'none', color: 'black'}}>info@buchhaltung-service.berlin</a><br/>
-                    <b>Web</b>: <a href="https://www.buchhaltung-service.berlin" style={{textDecoration: 'none', color: 'black'}}>www.buchhaltung-service.berlin</a>
+                    <StyledSpan>E-Mail</StyledSpan>: <a href="mailto:info@buchhaltung-service.berlin" style={{textDecoration: 'none', color: 'black'}}>info@buchhaltung-service.berlin</a><br/>
+                    <StyledSpan>Web</StyledSpan>: <a href="https://www.buchhaltung-service.berlin" style={{textDecoration: 'none', color: 'black'}}>www.buchhaltung-service.berlin</a>
                     <p/>
-                    <b>Angaben zur Tätigkeit:</b> <br/>
+                    <StyledSpan>Angaben zur Tätigkeit:</StyledSpan> <br/>
                     Die Serviceleistungen in Steuersachen umfasst im <br/> 
                     Rahmen des § 6 Nr. 3 u. 4 StBerG das Kontieren<br/>
                     und Buchen der lfd. Geschäftsvorfälle, die laufende<br/> 
                     Lohnabrechnung und die Lohnsteuer- Anmeldung.
                     <p/>
-                    <b>Bild- und Grafikquellen:</b><br/>
+                    <StyledSpan>Bild- und Grafikquellen:</StyledSpan><br/>
                     © Designed by Freepik<br/>
                     © Designed by Colourbox
                     </Text>
                 </TextSection>
             <StyledImage/>
             <RightText>
-            <b>Designer Team:</b>
+            <StyledSpan>Designer Team:</StyledSpan>
             <p/>
             <a href="mailto:a.k.buchhaltungsservice@gmail.com"  style={{textDecoration: 'none', color: 'black'}}>ALESSIA KOSTENKO</a><br/>
             Idee, Konzept, Recherchen, Bilder 
@@ -70,7 +70,11 @@ const Impressions: React.FC = () => {
         </MainContainer>
     )
 };
-
+const StyledSpan = styled.span`
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 800;
+`;
 const StyledImage = styled(Impression)`
     display: block;
     margin-left: auto;
@@ -107,7 +111,7 @@ const Text = styled.div`
     font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
-    font-size: 1.7vh;
+    font-size: 14px;
     color: #000000;
     line-height: 2.5vh;
 `;

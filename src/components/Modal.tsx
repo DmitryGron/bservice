@@ -40,9 +40,9 @@ const Modal: React.FC<ComponentProps<any>> = ({isOpen}) => {
                 <LeftSection>
                     <TextSection>
                         <Title>BUCHHALTUNG FÜR DIE PFLEGE  </Title>
-                        <Text>01. <StyledLink to={AppPath.WHYUS} onClick={handleClose}>WARUM BEI UNS?</StyledLink></Text>
-                        <Text>02. <StyledLink to={AppPath.WHATWEOFFER} onClick={handleClose}>WAS BIETEN WIR?</StyledLink></Text>
-                        <Text>03. <StyledLink to={AppPath.ACCOUNTINGCOST} onClick={handleClose}>WAS KOSTET DIE BUCHHALTUNG?</StyledLink></Text>
+                        <Text><StyledSpan>01.</StyledSpan><StyledLink to={AppPath.WHYUS} onClick={handleClose}>WARUM BEI UNS?</StyledLink></Text>
+                        <Text><StyledSpan>02.</StyledSpan> <StyledLink to={AppPath.WHATWEOFFER} onClick={handleClose}>WAS BIETEN WIR?</StyledLink></Text>
+                        <Text><StyledSpan>03.</StyledSpan> <StyledLink to={AppPath.ACCOUNTINGCOST} onClick={handleClose}>WAS KOSTET DIE BUCHHALTUNG?</StyledLink></Text>
                     </TextSection>                
                 </LeftSection>
                 <RightSection>
@@ -54,47 +54,39 @@ const Modal: React.FC<ComponentProps<any>> = ({isOpen}) => {
         </Dialog>
     )
 };
-const float = keyframes`
-    50% {
-     transform: translate(0, 20px);
-  }
+const StyledSpan = styled.span`
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 26px;
 `;
-const rotate = keyframes`
-    from { transform: rotate(0deg); }
-    to { transform: rotate(360deg); }
-`;
-
 const StyledImage = styled.img`
-    margin: 25vh auto;   
+    margin: 23.6vh auto;   
     display: block;
-    width: 30vw;
-    height: 47.5vh;
-    .float {
-        animation: ${rotate} 5s linear infinite;
-        transform-box: fill-box;
-        transform-origin: center;
-        /* animation: ${float} 3s ease-out infinite; */
-    }
+    width: 23.75vw;
+    height: 42.8vh;
 `;
 const TextSection = styled.div`
-    margin: 30vh 6vw;
+    margin: 31.3vh 6vw;
     display: flex;
     flex-direction: column;
 `;
 const Title = styled.div`
-    margin-bottom: 5vh;
+    margin-bottom: 2vh;
     font-style: normal;
     font-weight: 600;
     font-size: 48px;
     line-height: 52px;
     color: #FFFFFF;
+    max-width: 25vw;
 `;
 const StyledLink = styled(Link)`
     text-decoration: none;
     font-style: normal;
     font-weight: normal;
-    font-size: 2vh;
-    line-height: 145.5%;
+    font-size: 18px;
+    line-height: 26px;
     color: #FFFFFF;
     :hover {
         text-decoration: underline;
@@ -104,7 +96,7 @@ const Text = styled.div`
     margin: 2vh 0;
     font-family: Montserrat;
     font-weight: 900;
-    font-size: 2vh;
+    font-size: 18px;
     line-height: 2.5vh; 
 `;
 const ActionButtonWhite = styled(ActionButton)`

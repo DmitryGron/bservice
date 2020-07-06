@@ -35,7 +35,7 @@ const WhyUs: React.FC = () => {
                     <b>BUCHHALTUNG SERVICE</b> garantiert Ihnen eine zuverlässige Buchhaltung, damit 
                     Sie für dietäglichen Herausforderungen der Pflege denRücken frei haben. 
                     <p/>
-                    <b>AUS DER PFLEGE, FÜR DIE PFLEGE!</b>
+                    <StyledSpan>AUS DER PFLEGE, FÜR DIE PFLEGE!</StyledSpan>
                     </Text>
                 </TextSection> 
             </LeftSection>
@@ -53,7 +53,11 @@ const rotate = keyframes`
     from { transform: rotate(0deg); }
     to { transform: rotate(360deg); }
 `;
-
+const StyledSpan = styled.span`
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 800;
+`;
 const rotateLeft = keyframes`
     from { transform: rotate(0deg); }
     to { transform: rotate(-360deg); }
@@ -63,6 +67,7 @@ const TextSection = styled.div`
     margin: 30vh 6vw;
     display: flex;
     flex-direction: column;
+    max-width: 25.520833333333332vw;
 `;
 const Title = styled.div`
     font-style: normal;
@@ -76,7 +81,7 @@ const Text = styled.div`
     font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
-    font-size: 2vh; 
+    font-size: 18px; 
     line-height: 2.5vh;
 `;
 const StyledImage = styled(People)`

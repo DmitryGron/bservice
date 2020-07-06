@@ -28,6 +28,7 @@ const WhatWeOffer: React.FC = () => {
         <Image component={StyledImage} src={whatWeOffer} alt="what-we-offer-image"/>
         <Image component={ImageWhite} src={whatWeOfferWhite} alt="what-we-offer-image"/>
         </StyledContainer>
+        <StyledSpan>WIR SIND FÜR SIE DA!</StyledSpan>
             <LeftSection>
             </LeftSection>
             <RightSection>
@@ -45,16 +46,26 @@ const ActionButtonWhite = styled(ActionButton)`
         display: flex;
     }
 `;
-
+const StyledSpan = styled.span`
+    position: absolute;
+    bottom: 8.7vh;
+    left: 3.125vw;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 26px;
+`;
 const StyledContainer = styled.div`
+    margin: 0 12.5vw;
     position:absolute;
     display: flex;
     flex-direction: row;
-    left: 10%;
 `;
 const StyledImage = styled.img`
-    margin-top: 21vh;
-    width: 80vw;
+    margin: 21vh 3.125vw;
+    width: 68.802083vw;
+    height: 60vh;
     display: block;
     @media (max-width: 900px) {
         display: none;

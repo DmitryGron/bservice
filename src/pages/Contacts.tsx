@@ -25,8 +25,8 @@ const Contacts: React.FC = () => {
                     <Text>
                     <a href="mailto:info@buchhaltung-service.berlin" style={{textDecoration: 'none', color: 'black'}}>info@buchhaltung-service.berlin</a><br/>
                     <p/>
-                    Telefon: <b><a href="tel:+015217840168" style={{textDecoration: 'none', color: 'black'}}>0152</a> / <a href="tel:17840168" style={{textDecoration: 'none', color: 'black'}}>178 40 168</a></b><br/>
-                    Telefax: <b><a href="tel:+030290 48 188" style={{textDecoration: 'none', color: 'black'}}>030</a> / <a href="tel:29048188" style={{textDecoration: 'none', color: 'black'}}>290 48 188</a></b>
+                    Telefon: <StyledSpan><a href="tel:+015217840168" style={{textDecoration: 'none', color: 'black'}}>0152</a> / <a href="tel:17840168" style={{textDecoration: 'none', color: 'black'}}>178 40 168</a></StyledSpan><br/>
+                    Telefax: <StyledSpan><a href="tel:+030290 48 188" style={{textDecoration: 'none', color: 'black'}}>030</a> / <a href="tel:29048188" style={{textDecoration: 'none', color: 'black'}}>290 48 188</a></StyledSpan>
                     <p/>
                     Buchhaltung Service Berlin <br/>
                     Alessia Kostenko <br/>
@@ -41,22 +41,26 @@ const Contacts: React.FC = () => {
         </MainContainer>
     )
 };
-
+const StyledSpan = styled.span`
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 800;
+`;
 const StyledImage = styled(Contact)`
     margin-left: auto;
     order: 2;
-    margin-top: 20vh;
-    margin-right: 10vw;
+    margin-top: 19.8vh;
+    margin-right:  7.552083333333333vw;
     display: block;
     float: right;
-    width: 30vw;
-    height: auto;
+    width: 25.677083333333332vw;
+    height: 53.4vh;
     @media (max-width: 900px) {
         display: none;
     }
 `;
 const TextSection = styled.div`
-    margin-top: 25vh;
+    margin-top: 30.4vh;
     margin-left: 6vw;
     display: flex;
     flex-direction: column;
@@ -73,7 +77,7 @@ const Text = styled.div`
     font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
-    font-size: 2.5vh;
+    font-size: 22px;
     color: #000000;
     line-height: 3vh;
 

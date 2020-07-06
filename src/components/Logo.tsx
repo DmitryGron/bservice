@@ -2,25 +2,25 @@ import React, { ComponentProps } from 'react';
 import styled from 'styled-components';
 import logo from '../assets/logo.svg';
 import redLogo from '../assets/logoRed.svg';
+import Image from "../components/Image";
+
 
 const Logo: React.FC<ComponentProps<any>> = ({ red, className }) => {
   return (
-    <LogoContainer href="/" className={className} style={{background: `url(${red? redLogo : logo}) no-repeat 50% 50%`}} />
+    <StyledLink href="/"  className={className}><Image component={StyledImage} src={ red ? redLogo : logo} alt="Scores image"/></StyledLink>
   );
 };
 
-export const LogoContainer = styled.a`
+const StyledLink = styled.a`
   position: absolute;
-  display: inline-block;
-  vertical-align: top;
-  width: 168.22px;
-  height: 87px;
-  margin: 40px 60px;
-  z-index: 2;
-  background-size: 69px 175px;
-  @media (max-height: 720px){
-    margin: 32px 48px;
-  }
+  width: 8.761458333333334vwpx;
+  height: 8.7vh;
+  margin: 4vh 3.125vw;
+`;
+const StyledImage = styled.img`
+  position: absolute;
+  width: 8.761458333333334vwpx;
+  height: 8.7vh;
 `;
 
 export default Logo;

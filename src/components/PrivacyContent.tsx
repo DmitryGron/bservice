@@ -44,9 +44,9 @@ const PrivacyContent: React.FC = () => {
           </RightText>
         </RowWrapper>
         <Divider />
+        <LeftText><h2> 1. Begriffsbestimmungen</h2></LeftText>
         <RowWrapper>
           <LeftText>
-            <h2> 1. Begriffsbestimmungen</h2>
             Die Datenschutzerklärung der Buchhaltung Service Berlin beruht auf den
             Begrifflichkeiten, die durch den Europäischen Richtlinien- und Verordnungsgeber
             beim Erlass der Datenschutz-Grundverordnung (DS-GVO) verwendet wurden.<br/>
@@ -57,9 +57,7 @@ const PrivacyContent: React.FC = () => {
             Wir verwenden in dieser Datenschutzerklärung unter anderem die folgenden Begriffe:
           </LeftText>
           <RightText>
-            <br/>
-            <br/>
-            <h4>a) Personenbezogene Daten</h4>
+            <b>a) Personenbezogene Daten</b><br/>
             Personenbezogene Daten sind alle Informationen, die sich auf eine identifizierte oder
             identifizierbare natürliche Person (im Folgenden „betroffene Person“) beziehen. Als
             identifizierbar wird eine natürliche Person angesehen, die direkt oder indirekt,
@@ -73,13 +71,13 @@ const PrivacyContent: React.FC = () => {
         <Divider />
         <RowWrapper>
           <LeftText>
-            <h4>b) Betroffene Person</h4>
+            <b>b) Betroffene Person</b><br/>
             Betroffene Person ist jede identifizierte oder identifizierbare natürliche Person, deren
             personenbezogene Daten von dem für die Verarbeitung Verantwortlichen verarbeitet
             werden. <br/>
           </LeftText>
           <RightText>
-            <h4>c) Verarbeitung</h4>
+            <b>c) Verarbeitung</b><br/>
             Verarbeitung ist jeder mit oder ohne Hilfe automatisierter Verfahren ausgeführte
             Vorgang oder jede solche Vorgangsreihe im Zusammenhang mit
             personenbezogenen Daten wie das Erheben, das Erfassen, die Organisation, das
@@ -92,12 +90,12 @@ const PrivacyContent: React.FC = () => {
         <Divider />
         <RowWrapper>
           <LeftText>
-            <h4>d) Einschränkung der Verarbeitung</h4>
+            <b>d) Einschränkung der Verarbeitung</b><br/>
             Einschränkung der Verarbeitung ist die Markierung gespeicherter
             personenbezogener Daten mit dem Ziel, ihre künftige Verarbeitung einzuschränken.
           </LeftText>
           <RightText>
-            <h4>e) Profiling</h4>
+            <b>e) Profiling</b><br/>
             Profiling ist jede Art der automatisierten Verarbeitung personenbezogener Daten, die
             darin besteht, dass diese personenbezogenen Daten verwendet werden, um
             bestimmte persönliche Aspekte, die sich auf eine natürliche Person beziehen, zu
@@ -110,7 +108,7 @@ const PrivacyContent: React.FC = () => {
         <Divider />
         <RowWrapper>
           <LeftText>
-          <h4>f) Pseudonymisierung</h4>
+          <b>f) Pseudonymisierung</b><br/>
           Pseudonymisierung ist die Verarbeitung personenbezogener Daten in einer Weise,
           auf welche die personenbezogenen Daten ohne Hinzuziehung zusätzlicher
           Informationen nicht mehr einer spezifischen betroffenen Person zugeordnet werden
@@ -120,7 +118,7 @@ const PrivacyContent: React.FC = () => {
           natürlichen Person zugewiesen werden.
           </LeftText>
           <RightText>
-            <h4>g) Verantwortlicher oder für die Verarbeitung Verantwortlicher</h4>
+            <b>g) Verantwortlicher oder für die Verarbeitung Verantwortlicher</b><br/>
             Verantwortlicher oder für die Verarbeitung Verantwortlicher ist die natürliche oder
             juristische Person, Behörde, Einrichtung oder andere Stelle, die allein oder
             gemeinsam mit anderen über die Zwecke und Mittel der Verarbeitung von
@@ -134,13 +132,13 @@ const PrivacyContent: React.FC = () => {
         <Divider />
         <RowWrapper>
           <LeftText>
-            <h4>h) Auftragsverarbeiter</h4>
+            <b>h) Auftragsverarbeiter</b><br/>
             Auftragsverarbeiter ist eine natürliche oder juristische Person, Behörde, Einrichtung
             oder andere Stelle, die personenbezogene Daten im Auftrag des Verantwortlichen
             verarbeitet.
           </LeftText>
           <RightText>
-            <h4>i) Empfänger</h4>
+            <b>i) Empfänger</b><br/>
             Empfänger ist eine natürliche oder juristische Person, Behörde, Einrichtung oder
             andere Stelle, der personenbezogene Daten offengelegt werden, unabhängig davon,
             ob es sich bei ihr um einen Dritten handelt oder nicht. Behörden, die im Rahmen
@@ -152,8 +150,7 @@ const PrivacyContent: React.FC = () => {
         <Divider />
         <RowWrapper>
           <LeftText>
-            <h4>j) Dritter</h4>
-            <p/>
+            <b>j) Dritter</b><br/>
             Dritter ist eine natürliche oder juristische Person, Behörde, Einrichtung oder andere
             Stelle außer der betroffenen Person, dem Verantwortlichen, dem Auftragsverarbeiter
             und den Personen, die unter der unmittelbaren Verantwortung des Verantwortlichen
@@ -161,7 +158,7 @@ const PrivacyContent: React.FC = () => {
             verarbeiten.
           </LeftText>
           <RightText>
-            <h4>k) Einwilligung</h4>
+            <b>k) Einwilligung</b><br/>
             Einwilligung ist jede von der betroffenen Person freiwillig für den bestimmten Fall in
             informierter Weise und unmissverständlich abgegebene Willensbekundung in Form
             einer Erklärung oder einer sonstigen eindeutigen bestätigenden Handlung, mit der
@@ -187,9 +184,9 @@ const PrivacyContent: React.FC = () => {
           </WideText>
         </RowWrapper>
         <Divider />
+        <LeftText><h2>3. Erfassung von allgemeinen Daten und Informationen</h2></LeftText>
         <RowWrapper>
           <LeftText>
-          <h2>3. Erfassung von allgemeinen Daten und Informationen</h2>
           Die Internetseite der Buchhaltung Service Berlin erfasst mit jedem Aufruf der
           Internetseite durch eine betroffene Person oder ein automatisiertes System eine
           Reihe von allgemeinen Daten und Informationen. Diese allgemeinen Daten und
@@ -207,9 +204,6 @@ const PrivacyContent: React.FC = () => {
           informationstechnologischen Systeme dienen.
           </LeftText>
           <RightText>
-          <br/>
-          <br/>
-          <br/>
           Bei der Nutzung dieser allgemeinen Daten und Informationen zieht die Buchhaltung
           Service Berlin keine Rückschlüsse auf die betroffene Person. Diese Informationen
           werden vielmehr benötigt, um (1) die Inhalte unserer Internetseite korrekt
@@ -227,21 +221,17 @@ const PrivacyContent: React.FC = () => {
           </RightText>
         </RowWrapper>
         <Divider />
+        <LeftText><h2>4. Routinemäßige Löschung und Sperrung von personenbezogenen Daten</h2></LeftText>
         <RowWrapper>
           <LeftText>
-          <h2>4. Routinemäßige Löschung und Sperrung von personenbezogenen Daten</h2>
           Der für die Verarbeitung Verantwortliche verarbeitet und speichert
           personenbezogene Daten der betroffenen Person nur für den Zeitraum, der zur
           Erreichung des Speicherungszwecks erforderlich ist oder sofern dies durch den
           Europäischen Richtlinien- und Verordnungsgeber oder einen anderen Gesetzgeber
-          </LeftText>
-          <RightText>
-          <br/>
-          <br/>
-          <br/>
-          <br/>
           in Gesetzen oder Vorschriften, welchen der für die Verarbeitung Verantwortliche
           unterliegt, vorgesehen wurde.<br/>
+          </LeftText>
+          <RightText>
           Entfällt der Speicherungszweck oder läuft eine vom Europäischen Richtlinien- und
           Verordnungsgeber oder einem anderen zuständigen Gesetzgeber vorgeschriebene
           Speicherfrist ab, werden die personenbezogenen Daten routinemäßig und
@@ -249,10 +239,10 @@ const PrivacyContent: React.FC = () => {
           </RightText>
         </RowWrapper>
         <Divider />
+        <LeftText><h2>5. Rechte der betroffenen Person</h2></LeftText>
         <RowWrapper>
           <LeftText>
-            <h2>5. Rechte der betroffenen Person</h2>
-            <h4>a) Recht auf Bestätigung</h4>
+            <b>a) Recht auf Bestätigung</b><br/>
             Jede betroffene Person hat das vom Europäischen Richtlinien- und
             Verordnungsgeber eingeräumte Recht, von dem für die Verarbeitung
             Verantwortlichen eine Bestätigung darüber zu verlangen, ob sie betreffende
@@ -261,9 +251,7 @@ const PrivacyContent: React.FC = () => {
             Mitarbeiter des für die Verarbeitung Verantwortlichen wenden.
           </LeftText>
           <RightText>
-          <br/>
-          <br/>
-            <h4>b) Recht auf Auskunft</h4>
+            <b>b) Recht auf Auskunft</b><br/>
             Jede von der Verarbeitung personenbezogener Daten betroffene Person hat das
             vom Europäischen Richtlinien- und Verordnungsgeber gewährte Recht, jederzeit von
             dem für die Verarbeitung Verantwortlichen unentgeltliche Auskunft über die zu seiner
@@ -309,7 +297,7 @@ const PrivacyContent: React.FC = () => {
         <Divider />
         <RowWrapper>
           <LeftText>
-          <h4>c) Recht auf Berichtigung</h4>
+          <b>c) Recht auf Berichtigung</b><br/>
           Jede von der Verarbeitung personenbezogener Daten betroffene Person hat das
           vom Europäischen Richtlinien- und Verordnungsgeber gewährte Recht, die
           unverzügliche Berichtigung sie betreffender unrichtiger personenbezogener Daten zu
@@ -322,7 +310,7 @@ const PrivacyContent: React.FC = () => {
           Verantwortlichen wenden.
           </LeftText>
           <RightText>
-          <h4>d) Recht auf Löschung (Recht auf Vergessen werden)</h4>
+          <b>d) Recht auf Löschung (Recht auf Vergessen werden)</b><br/>
           Jede von der Verarbeitung personenbezogener Daten betroffene Person hat das
           vom Europäischen Richtlinien- und Verordnungsgeber gewährte Recht, von dem
           Verantwortlichen zu verlangen, dass die sie betreffenden personenbezogenen Daten
@@ -373,7 +361,7 @@ const PrivacyContent: React.FC = () => {
         <Divider />
         <RowWrapper>
           <LeftText>
-            <h4>e) Recht auf Einschränkung der Verarbeitung</h4>
+            <b>e) Recht auf Einschränkung der Verarbeitung</b><br/>
             Jede von der Verarbeitung personenbezogener Daten betroffene Person hat das
             vom Europäischen Richtlinien- und Verordnungsgeber gewährte Recht, von dem
             Verantwortlichen die Einschränkung der Verarbeitung zu verlangen, wenn eine der
@@ -386,6 +374,7 @@ const PrivacyContent: React.FC = () => {
             Nutzung der personenbezogenen Daten.<br/>
           </LeftText>
           <RightText>
+            <br/>
             &#9702; Der Verantwortliche benötigt die personenbezogenen Daten für die Zwecke der
             Verarbeitung nicht länger, die betroffene Person benötigt sie jedoch zur
             Geltendmachung, Ausübung oder Verteidigung von Rechtsansprüchen.<br/>
@@ -403,7 +392,7 @@ const PrivacyContent: React.FC = () => {
         <Divider />
         <RowWrapper>
         <WideText>
-          <h4>f) Recht auf Datenübertragbarkeit</h4>
+          <b>f) Recht auf Datenübertragbarkeit</b><br/>
           Jede von der Verarbeitung personenbezogener Daten betroffene Person hat das
           vom Europäischen Richtlinien- und Verordnungsgeber gewährte Recht, die sie
           betreffenden personenbezogenen Daten, welche durch die betroffene Person einem
@@ -431,7 +420,7 @@ const PrivacyContent: React.FC = () => {
         <Divider />
         <RowWrapper>
          <WideText>
-            <h4>g) Recht auf Widerspruch</h4>
+            <b>g) Recht auf Widerspruch</b><br/>
             Jede von der Verarbeitung personenbezogener Daten betroffene Person hat das
             vom Europäischen Richtlinien- und Verordnungsgeber gewährte Recht, aus
             Gründen, die sich aus ihrer besonderen Situation ergeben, jederzeit gegen die
@@ -473,7 +462,7 @@ const PrivacyContent: React.FC = () => {
         <Divider />
         <RowWrapper>
          <WideText>
-            <h4>h) Automatisierte Entscheidungen im Einzelfall einschließlich Profiling</h4>
+            <b>h) Automatisierte Entscheidungen im Einzelfall einschließlich Profiling</b><br/>
             Jede von der Verarbeitung personenbezogener Daten betroffene Person hat das
             vom Europäischen Richtlinien- und Verordnungsgeber gewährte Recht, nicht einer
             ausschließlich auf einer automatisierten Verarbeitung — einschließlich Profiling —
@@ -504,7 +493,7 @@ const PrivacyContent: React.FC = () => {
         <Divider />
         <RowWrapper>
           <WideText>
-            <h4>i) Recht auf Widerruf einer datenschutzrechtlichen Einwilligung</h4>
+            <b>i) Recht auf Widerruf einer datenschutzrechtlichen Einwilligung</b><br/>
             Jede von der Verarbeitung personenbezogener Daten betroffene Person hat das
             vom Europäischen Richtlinien- und Verordnungsgeber gewährte Recht, eine
             Einwilligung zur Verarbeitung personenbezogener Daten jederzeit zu widerrufen.

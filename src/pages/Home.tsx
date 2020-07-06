@@ -40,27 +40,27 @@ const Home: React.FC = () => {
 };
 
 const Title = styled.div`
-    margin: 5vh auto;
+    margin: 5.996vh auto;
     font-style: normal;
     font-weight: 600;
-    font-size: 3vh;
+    font-size: 24px;
     line-height: 3.5vh;
     text-transform: uppercase;
     color: #FFFFFF;
 `;
 const StyledImage = styled.img`
-    margin: 25vh auto 0;    
+    margin: 26.5vh auto 0;    
     display: block;
-    height: 45vh;
-    @media (max-height: 720px){
+    width: 13.65625vw;
+    height: 37.204vh;
+    @media (max-width: 900px) {
+        width: 32.65625vw;
     }
 `;
 const StyledImage2 = styled(StyledImage)`
-    margin: 6vh auto 0;    
-    
-    height: 80vh;
-    @media (max-height: 720px){
-    }
+    margin: 11vh auto 0;    
+    width: 20.9078125vw;
+    height: 65.01799999999999vh;
 `;
 
 const ActionButtonWhite = styled(ActionButton)`

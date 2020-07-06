@@ -58,7 +58,7 @@ const StyledContainer = styled.div`
     }
 `;
 const StyledLink = styled(Link)`
-    margin: 2vh 40px;;
+    margin: 3vh 40px;;
     width: 64px;
     height: 23px;
     left: 500px;
@@ -66,7 +66,7 @@ const StyledLink = styled(Link)`
     font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
-    font-size: 2vh;
+    font-size: 16px;
     line-height: 23px;
     color: #FFFFFF;
     text-decoration: none;

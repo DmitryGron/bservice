@@ -34,7 +34,7 @@ const AccountingCost: React.FC = () => {
                         <p/>
                         Vereinbaren Sie noch heute einen Termin für eine kostenlose und unverbindliche Erstberatung.
                         <p/>
-                        <b>WIR SCHAFFEN ORDNUNG!</b>
+                        <StyledSpan>WIR SCHAFFEN ORDNUNG!</StyledSpan>
                     </Text>
                 </TextSection> 
             </LeftSection>
@@ -53,9 +53,10 @@ const rotate = keyframes`
     to { transform: rotate(360deg); }
 `;
 const TextSection = styled.div`
-    margin: 30vh 6vw;
+    margin: 25.1vh 6vw;
     display: flex;
     flex-direction: column;
+    max-width: 25.520833333333332vw;
 `;
 const Title = styled.div`
     font-style: normal;
@@ -69,8 +70,8 @@ const Text = styled.div`
     font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
-    font-size: 2vh; 
-    line-height: 2.5vh;
+    font-size: 18px;
+    line-height: 26px;
 `;
 const ActionButtonWhite = styled(ActionButton)`
     display: none;
@@ -79,14 +80,19 @@ const ActionButtonWhite = styled(ActionButton)`
     }
 `;
 const StyledImage = styled(Costs)`
-    margin: 25vh auto;   
+    margin: 29.4vh auto;   
     display: block;
-    width: 40vw;
-    height: auto;
+    width: 29.6875vw;
+    height: 42.4vh;
     .gear {
         animation: ${rotate} 5s linear infinite;
         transform-box: fill-box;
         transform-origin: center;
     }
+`;
+const StyledSpan = styled.span`
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 800;
 `;
 export default AccountingCost;
