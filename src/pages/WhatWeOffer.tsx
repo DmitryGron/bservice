@@ -79,8 +79,11 @@ const TextSection = styled.div`
     margin: 25vh 6vw;
     flex-direction: column;
     max-width: 75.520833vw;
-    @media (max-width: 900px) {
+    @media (max-width: 900px) and (min-width: 500px) {
         display: flex;
+    }
+    @media (max-width: 500px) {
+        margin: 15.3vh 6vw;
     }
 `;
 const Title = styled.div`

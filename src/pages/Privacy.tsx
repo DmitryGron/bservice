@@ -83,6 +83,9 @@ const TextSection = styled.div`
     margin-left: 6vw;
     display: flex;
     flex-direction: column;
+    @media (min-width: 500px) {
+        margin: 15vh 6vw;
+    }
 `;
 const Title = styled.div`
     margin-bottom: 5vh;

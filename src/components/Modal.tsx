@@ -71,6 +71,9 @@ const TextSection = styled.div`
     margin: 31.3vh 6vw;
     display: flex;
     flex-direction: column;
+    @media (max-width: 500px) {
+        margin: 15.3vh 6vw;
+    }
 `;
 const Title = styled.div`
     margin-bottom: 2vh;

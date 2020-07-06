@@ -94,8 +94,11 @@ const TextSection = styled.div`
     display: flex;
     flex-direction: column;
     max-width: 20vw;
-    @media (max-width: 1500px) {
+    @media (max-width: 1500px) and (min-width: 900px) {
         max-width: 75vw;
+    }
+    @media (min-width: 500px) {
+        margin: 15vh 6vw;
     }
 `;
 const Title = styled.div`
