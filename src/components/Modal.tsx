@@ -1,5 +1,5 @@
 import React, {useEffect, ComponentProps }  from "react";
-import styled, { keyframes } from "styled-components";
+import styled from "styled-components";
 import Dialog from '@material-ui/core/Dialog';
 import { Link } from 'react-router-dom';
 import MainContainer from "./MainContainer";
@@ -40,9 +40,9 @@ const Modal: React.FC<ComponentProps<any>> = ({isOpen}) => {
                 <LeftSection>
                     <TextSection>
                         <Title>BUCHHALTUNG FÜR DIE PFLEGE  </Title>
-                        <Text><StyledSpan>01.</StyledSpan><StyledLink to={AppPath.WHYUS} onClick={handleClose}>WARUM BEI UNS?</StyledLink></Text>
-                        <Text><StyledSpan>02.</StyledSpan> <StyledLink to={AppPath.WHATWEOFFER} onClick={handleClose}>WAS BIETEN WIR?</StyledLink></Text>
-                        <Text><StyledSpan>03.</StyledSpan> <StyledLink to={AppPath.ACCOUNTINGCOST} onClick={handleClose}>WAS KOSTET DIE BUCHHALTUNG?</StyledLink></Text>
+                        <Text><StyledSpan>01. </StyledSpan><StyledLink to={AppPath.WHYUS} onClick={handleClose}>WARUM BEI UNS?</StyledLink></Text>
+                        <Text><StyledSpan>02. </StyledSpan> <StyledLink to={AppPath.WHATWEOFFER} onClick={handleClose}>WAS BIETEN WIR?</StyledLink></Text>
+                        <Text><StyledSpan>03. </StyledSpan> <StyledLink to={AppPath.ACCOUNTINGCOST} onClick={handleClose}>WAS KOSTET DIE BUCHHALTUNG?</StyledLink></Text>
                     </TextSection>                
                 </LeftSection>
                 <RightSection>
@@ -58,17 +58,17 @@ const StyledSpan = styled.span`
     font-family: Montserrat;
     font-style: normal;
     font-weight: 800;
-    font-size: 18px;
-    line-height: 26px;
+    font-size: 1.125rem;
+    line-height: 1.625rem;
 `;
 const StyledImage = styled.img`
-    margin: 23.6vh auto;   
+    margin: 26.2vh 10vw;   
     display: block;
-    width: 23.75vw;
-    height: 42.8vh;
+    width: 31.667vw;
+    height: 47.5vh;
 `;
 const TextSection = styled.div`
-    margin: 31.3vh 6vw;
+    margin: 31.3vh 8.056vw;
     display: flex;
     flex-direction: column;
     @media (max-width: 600px) {
@@ -79,31 +79,39 @@ const Title = styled.div`
     margin-bottom: 2vh;
     font-style: normal;
     font-weight: 600;
-    font-size: 48px;
-    line-height: 52px;
+    font-size: 3rem;
+    line-height: 3.25rem;
     color: #FFFFFF;
-    max-width: 25vw;
-    @media (max-width: 600px) {
+    max-width: 30vw;
+    @media (max-width: 1200px) {
         max-width: 75vw;
+    }
+    @media (max-height: 900px) {
+        font-size: 5.2vh;
+        line-height: 5.7vh;
     }
 `;
 const StyledLink = styled(Link)`
     text-decoration: none;
     font-style: normal;
     font-weight: normal;
-    font-size: 18px;
-    line-height: 26px;
+    font-size: 1.125rem;
+    line-height: 1.625rem;
     color: #FFFFFF;
     :hover {
         text-decoration: underline;
     }
 `;
 const Text = styled.div`
-    margin: 2vh 0;
+    margin: 1vh 0;
     font-family: Montserrat;
     font-weight: 900;
-    font-size: 18px;
-    line-height: 2.5vh; 
+    font-size: 1.125rem;
+    line-height: 1.625rem; 
+    @media (max-height: 900px) {
+        font-size: 1.5vh;
+        line-height: 2.2vh;
+    }
 `;
 const ActionButtonWhite = styled(ActionButton)`
     display: none;

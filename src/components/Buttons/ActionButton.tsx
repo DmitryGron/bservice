@@ -11,16 +11,25 @@ const ActionButton: React.FC<ComponentProps<any>> = ({src, anotherSrc, onClick, 
       };
     return(
         <ButtonWrapper>
-                <IconButton {...rest} onClick={handleButtonClick}><img src={src} alt='burger-btn'/></IconButton>
+                <IconButton {...rest} onClick={handleButtonClick}><StyledImg src={src} alt='burger-btn'/></IconButton>
         </ButtonWrapper>
     )
 };
 
 const ButtonWrapper = styled.div`
-margin: 4vh 3vh;
+margin: 7.7vh 4.167vw;
 position: absolute;
 display: flex;
 right: 0;
+`;
+
+const StyledImg = styled.img`
+  height: 1.6vh;
+  width: 2.083vw;
+  @media (max-width: 1400px) {
+      width: 30px;
+      height: 15px;
+    }
 `;
 
 export default ActionButton;

@@ -1,16 +1,16 @@
-import React, {useEffect, useRef, useState} from "react";
+import React, { useEffect, useRef, useState } from "react";
 import styled from "styled-components";
 import Logo from '../components/Logo';
 import ActionButton from '../components/Buttons/ActionButton'
 import MainContainer from "../components/MainContainer";
 import burger from '../assets/burger.svg'
-import {InfoContainerBlack} from "../components/InfoContainer";
+import { InfoContainerBlack } from "../components/InfoContainer";
 import Modal from '../components/Modal';
 import { ReactComponent as PrivacyImg } from '../assets/privacy.svg'
 import PrivacyContent from '../components/PrivacyContent';
 
 
-const Privacy: React.FC = () => {  
+const Privacy: React.FC = () => {
     const [open, setOpen] = React.useState<boolean | undefined>(undefined);
     const [goingUp, setGoingUp] = useState(true);
     const handleOpen = () => {
@@ -18,82 +18,82 @@ const Privacy: React.FC = () => {
     };
     const prevScrollY = useRef(0);
 
-  
+
     useEffect(() => {
-      const handleScroll = () => {
-        const currentScrollY = window.scrollY;
-        if (prevScrollY.current < currentScrollY && goingUp) {
-          setGoingUp(false);
-        }
-        if (prevScrollY.current > currentScrollY && !goingUp) {
-          setGoingUp(true);
-        }
-  
-        prevScrollY.current = currentScrollY;
-      };
-  
-      window.addEventListener("scroll", handleScroll);
-  
-      return () =>  window.removeEventListener("scroll", handleScroll);
+        const handleScroll = () => {
+            const currentScrollY = window.scrollY;
+            if (prevScrollY.current < currentScrollY && goingUp) {
+                setGoingUp(false);
+            }
+            if (prevScrollY.current > currentScrollY && !goingUp) {
+                setGoingUp(true);
+            }
+
+            prevScrollY.current = currentScrollY;
+        };
+
+        window.addEventListener("scroll", handleScroll);
+
+        return () => window.removeEventListener("scroll", handleScroll);
     }, [goingUp]);
 
     return (
         <MainContainer>
             <Header className={goingUp ? 'fadeIn' : 'fadeOut'}>
-                <StyledLogo red={true}/>
-                <ActionButton src={burger} onClick={handleOpen}/>
-            </Header> 
-                <Modal isOpen={open} />
+                <StyledLogo red={true} />
+                <ActionButton src={burger} onClick={handleOpen} />
+            </Header>
+            <Modal isOpen={open} />
             <Wrapper>
                 <TextSection>
                     <Title>DATENSCHUTZ</Title>
-                    <PrivacyContent/>
+                    <PrivacyContent />
                 </TextSection>
-                <StyledImage/>
+                <StyledImage />
             </Wrapper>
             <Footer className={goingUp ? 'fadeIn' : 'fadeOut'}>
-                <InfoContainerBlack/>
+                <InfoContainerBlack />
             </Footer>
         </MainContainer>
     )
 };
 
 const StyledImage = styled(PrivacyImg)`
-    margin-top: 20vh;
-    margin-right: 15vw;
+    margin-top: 28.4vh;
+    margin-right: 10vw;
     position: absolute;
     display: flex;
     right: 0;
-    width: 25vw;
-    height: auto;
+    width: 31.736vw;
+    height: 34.7vh;
     @media (max-width: 900px) {
         display: none;
     }
-    @media (max-width: 1300px) {
-        margin-right: 12vw;
-        margin-top: 30vh;
-    }
-    @media (max-width: 1100px) {
-        margin-right: 10vw;
-        margin-top: 40vh;
-    }
 `;
 const TextSection = styled.div`
-    margin-top: 25vh;
-    margin-left: 6vw;
+    margin-top: 27.8vh;
+    margin-left: 8.056vw;
     display: flex;
     flex-direction: column;
     @media (max-width: 600px) {
-        margin: 20vh 6vw;
+        margin: 20vh 0 0 8.056vw;
+    }
+    @media (max-height: 900px) {
+        margin: 30vh 0 0 8.056vw;
+
     }
 `;
 const Title = styled.div`
-    margin-bottom: 5vh;
+    margin-bottom: 3.5555555555555554vh;
     font-style: normal;
     font-weight: 600;
-    font-size: 48px;
-    line-height: 52px;
+    font-size: 3rem;
+    line-height: 3.25rem;
     color: #000000;
+    @media (max-height: 900px) {
+        font-size: 5.2vh;
+        line-height: 5.7vh;
+    }
 `;
 const StyledLogo = styled(Logo)`
     position: inherit
@@ -117,7 +117,7 @@ const Header = styled<any>('div')`
         transition: .4s ease-in-out;
     }
 `;
-const Footer= styled.div`
+const Footer = styled.div`
     display: flex;
     position: fixed;
     left: 0;
@@ -126,7 +126,7 @@ const Footer= styled.div`
     background-color: #f6f6fa;
     color: #fff;
     text-align: center;
-    height: 6vh;
+    height: 10vh;
     
     &.fadeIn {
         transform: translateY(0);

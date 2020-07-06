@@ -40,11 +40,11 @@ const Home: React.FC = () => {
 };
 
 const Title = styled.div`
-    margin: 5.996vh auto;
+    margin: 6.7vh auto;
     font-style: normal;
     font-weight: 600;
-    font-size: 24px;
-    line-height: 3.5vh;
+    font-size: 1.5rem;
+    line-height: 1.625rem;
     text-transform: uppercase;
     color: #FFFFFF;
     @media (max-width: 600px){
@@ -53,10 +53,10 @@ const Title = styled.div`
     }
 `;
 const StyledImage = styled.img`
-    margin: 26.5vh auto 0;    
+    margin: 29.4vh auto 0;    
     display: block;
-    width: 13.65625vw;
-    height: 37.204vh;
+    width: 18.208vw;
+    height: 41.3vh;
     @media (max-width: 900px) and (min-width: 600px) {
         width: 32.65625vw;
     }
@@ -66,9 +66,9 @@ const StyledImage = styled.img`
     }
 `;
 const StyledImage2 = styled(StyledImage)`
-    margin: 11vh auto 0;    
-    width: 20.9078125vw;
-    height: 65.01799999999999vh;
+    margin: 12.2vh auto 0;    
+    width: 27.877vw;
+    height:72.2vh;
 `;
 
 const ActionButtonWhite = styled(ActionButton)`

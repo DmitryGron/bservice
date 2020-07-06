@@ -13,14 +13,18 @@ const Logo: React.FC<ComponentProps<any>> = ({ red, className }) => {
 
 const StyledLink = styled.a`
   position: absolute;
-  width: 8.761458333333334vwpx;
-  height: 8.7vh;
-  margin: 4vh 3.125vw;
+  width: 11.682vw;
+  height: 9.6vh;
+  min-width: 130px;
+  min-height: 65px;
+  margin: 4.4vh 4.167vw;
 `;
 const StyledImage = styled.img`
   position: absolute;
-  width: 8.761458333333334vwpx;
-  height: 8.7vh;
+  width: 11.682vw;
+  height: 9.6vh;
+  min-width: 130px;
+  min-height: 65px;
 `;
 
 export default Logo;

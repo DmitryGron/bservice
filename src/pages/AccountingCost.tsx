@@ -6,44 +6,44 @@ import RightSection from "../components/RightSection";
 import ActionButton from '../components/Buttons/ActionButton'
 import MainContainer from "../components/MainContainer";
 import burger from '../assets/burger.svg'
-import {InfoContainer} from "../components/InfoContainer";
+import { InfoContainer } from "../components/InfoContainer";
 import Modal from '../components/Modal';
 import whiteBurger from '../assets/burger-white.svg'
 import { ReactComponent as Costs } from '../assets/costs.svg'
 
-const AccountingCost: React.FC = () => {   
+const AccountingCost: React.FC = () => {
     const [open, setOpen] = React.useState<boolean | undefined>(undefined);
 
     const handleOpen = () => {
         open === undefined ? setOpen(true) : setOpen(!open);
-      };
+    };
 
     return (
         <MainContainer>
-            <Logo/>
-            <ActionButtonWhite src={whiteBurger} onClick={handleOpen}/>
+            <Logo />
+            <ActionButtonWhite src={whiteBurger} onClick={handleOpen} />
             <LeftSection>
-            <TextSection>
+                <TextSection>
                     <Title> WAS KOSTETDIE BUCHHALTUNG?</Title>
                     <Text>
-                        Unsere Honorare richten sich wie überall nach dem Aufwand und den tatsächlich in Anspruch genommenen Leistungen. 
+                        Unsere Honorare richten sich wie überall nach dem Aufwand und den tatsächlich in Anspruch genommenen Leistungen.
                         Eine gut vorbereitete Buchhaltung mit vollständigen Belegen spart jedoch Zeit und Kosten.
-                        <p/>
-                        Gerne schauen wir im Rahmen eines Probemonats, welchen Aufwand die Buchhaltung Ihres Pflegedienstes erfordert. 
+                        <p />
+                        Gerne schauen wir im Rahmen eines Probemonats, welchen Aufwand die Buchhaltung Ihres Pflegedienstes erfordert.
                         Danach unterbreiten wir Ihnen ein Angebot über die monatliche Pauschale.
-                        <p/>
+                        <p />
                         Vereinbaren Sie noch heute einen Termin für eine kostenlose und unverbindliche Erstberatung.
-                        <p/>
+                        <p />
                         <StyledSpan>WIR SCHAFFEN ORDNUNG!</StyledSpan>
                     </Text>
-                </TextSection> 
+                </TextSection>
             </LeftSection>
             <RightSection>
-                <ActionButton src={burger} onClick={handleOpen}/>
+                <ActionButton src={burger} onClick={handleOpen} />
                 <Modal isOpen={open} />
-                <StyledImage/>
+                <StyledImage />
             </RightSection>
-            <InfoContainer/>
+            <InfoContainer />
         </MainContainer>
     )
 };
@@ -53,37 +53,45 @@ const rotate = keyframes`
     to { transform: rotate(360deg); }
 `;
 const TextSection = styled.div`
-    margin: 25.1vh 6vw;
+    margin: 27.8vh auto 0 8.056vw;
     display: flex;
     flex-direction: column;
-    max-width: 25.520833333333332vw;
-    @media (max-width: 1300px) and (min-width: 900px) {
+    max-width: 34.9vw;
+    /* @media (max-width: 1300px) and (min-width: 900px) {
         max-width: 75.520833vw;
         margin-left: 1vw;
-    }
+    } */
     @media (max-width: 900px)  and (min-width: 600px){
         max-width: 75.520833vw;
         margin-left: 6vw;
     }
     @media (max-width: 600px) {
         max-width: 75.520833vw;
-        margin: 15.3vh 6vw;
     }
 `;
 const Title = styled.div`
     font-style: normal;
     font-weight: 600;
-    font-size: 48px;;
-    line-height: 52px;
+    font-size: 3rem;
+    line-height: 3.25rem;
     color: #FFFFFF;
+    @media (max-height: 900px) {
+        font-size: 5.2vh;
+        line-height: 5.7vh;
+    }
 `;
 const Text = styled.div`
     margin: 2vh 0;
     font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
-    font-size: 18px;
-    line-height: 26px;
+    font-size: 1.125rem;
+    line-height: 1.625rem;
+    @media (max-height: 900px) {
+        font-size: 2vh;
+        line-height: 2.8vh;
+    }
+    
 `;
 const ActionButtonWhite = styled(ActionButton)`
     display: none;
