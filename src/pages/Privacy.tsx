@@ -28,8 +28,12 @@ const Privacy: React.FC = () => {
             if (prevScrollY.current > currentScrollY && !goingUp) {
                 setGoingUp(true);
             }
+            if(currentScrollY === 0) {
+                setGoingUp(true);
+            }
 
             prevScrollY.current = currentScrollY;
+
         };
 
         window.addEventListener("scroll", handleScroll);
