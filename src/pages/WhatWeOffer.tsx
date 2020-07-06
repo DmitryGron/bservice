@@ -26,10 +26,28 @@ const WhatWeOffer: React.FC = () => {
             <ActionButtonWhite src={whiteBurger} onClick={handleOpen}/>
         <StyledContainer>
         <Image component={StyledImage} src={whatWeOffer} alt="what-we-offer-image"/>
-        <Image component={ImageWhite} src={whatWeOfferWhite} alt="what-we-offer-image"/>
         </StyledContainer>
         <StyledSpan>WIR SIND FÜR SIE DA!</StyledSpan>
             <LeftSection>
+            <TextSection>
+                    <Title>WAS GENAU BIETEN WIR AN?</Title>
+                    <Text>
+                    <h2>Abrechnung von Pflegeleistungen</h2>
+                    - Buchung der laufenden Geschäftsvorfälle<br/>
+                    - Debitoren- und Kreditorenbuchhaltung<br/>
+                    - Pflege der offenen Posten<br/>
+                    - Zahlungsüberwachung<br/>
+                    - Forderungsmanagement, Mahnwesen<br/>
+                    - Ausdruck von Zwischenauswertungen, z.B. Kassenbuch, OPListen, Sach- und Personenkonten,<br/>
+                    Summen- und Saldenlisten, BWA, Rating, Journal u.ä.
+                    <p/>
+                    <h2>Lohnbuchhaltung</h2>
+                    - laufende monatliche Abrechnung<br/>
+                    - Jahresendarbeiten<br/>
+                    - Bescheinigungen<br/>
+                    <StyledSpan>WIR SIND FÜR SIE DA!</StyledSpan>
+                    </Text>
+                </TextSection> 
             </LeftSection>
             <RightSection>
                 <ActionButton src={burger} onClick={handleOpen}/>
@@ -56,6 +74,30 @@ const StyledSpan = styled.span`
     font-size: 18px;
     line-height: 26px;
 `;
+const TextSection = styled.div`
+    display: none;
+    margin: 25vh 6vw;
+    flex-direction: column;
+    max-width: 75.520833vw;
+    @media (max-width: 900px) {
+        display: flex;
+    }
+`;
+const Title = styled.div`
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 52px;
+    color: #FFFFFF;
+`;
+const Text = styled.div`
+    margin: 2vh 0;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px; 
+    line-height: 2.5vh;
+`;
 const StyledContainer = styled.div`
     margin: 0 12.5vw;
     position:absolute;
@@ -72,13 +114,4 @@ const StyledImage = styled.img`
     }
 `;
 
-const ImageWhite = styled.img`
-    margin-top: 21vh;
-    width: 80vw;
-    display: none;
-    @media (max-width: 900px) {
-        margin-top: 30vh;
-        display: block;
-    }
-`;
 export default WhatWeOffer;

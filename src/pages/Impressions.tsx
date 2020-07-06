@@ -94,8 +94,7 @@ const TextSection = styled.div`
     display: flex;
     flex-direction: column;
     max-width: 20vw;
-
-    @media (max-width: 1160px) {
+    @media (max-width: 1500px) {
         max-width: 75vw;
     }
 `;

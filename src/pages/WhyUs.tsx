@@ -62,12 +62,19 @@ const rotateLeft = keyframes`
     from { transform: rotate(0deg); }
     to { transform: rotate(-360deg); }
 `;
-
 const TextSection = styled.div`
     margin: 30vh 6vw;
     display: flex;
     flex-direction: column;
     max-width: 25.520833333333332vw;
+    @media (max-width: 900px) {
+        max-width: 75.520833vw;
+        margin-left: 6vw;
+    }
+    @media (max-width: 1300px) and (min-width: 900px) {
+        max-width: 75.520833vw;
+        margin-left: 1vw;
+    }
 `;
 const Title = styled.div`
     font-style: normal;
