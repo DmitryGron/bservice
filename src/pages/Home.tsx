@@ -47,8 +47,9 @@ const Title = styled.div`
     line-height: 3.5vh;
     text-transform: uppercase;
     color: #FFFFFF;
-    @media (max-width: 500px) {
-        width: 32.65625vw;
+    @media (max-width: 600px){
+        width: 90.65625vw;
+        margin: 2vh 5vw;
     }
 `;
 const StyledImage = styled.img`
@@ -56,8 +57,12 @@ const StyledImage = styled.img`
     display: block;
     width: 13.65625vw;
     height: 37.204vh;
-    @media (max-width: 900px) {
-        margin: 5.996vh 5vw;
+    @media (max-width: 900px) and (min-width: 600px) {
+        width: 32.65625vw;
+    }
+    @media (max-width: 600px) {
+        margin: 15vh auto 0; 
+        width: 32.65625vw;
     }
 `;
 const StyledImage2 = styled(StyledImage)`

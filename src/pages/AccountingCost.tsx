@@ -61,11 +61,12 @@ const TextSection = styled.div`
         max-width: 75.520833vw;
         margin-left: 1vw;
     }
-    @media (max-width: 900px)  and (min-width: 500px){
+    @media (max-width: 900px)  and (min-width: 600px){
         max-width: 75.520833vw;
         margin-left: 6vw;
     }
-    @media (max-width: 500px) {
+    @media (max-width: 600px) {
+        max-width: 75.520833vw;
         margin: 15.3vh 6vw;
     }
 `;

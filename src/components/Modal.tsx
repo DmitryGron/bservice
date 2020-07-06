@@ -71,7 +71,7 @@ const TextSection = styled.div`
     margin: 31.3vh 6vw;
     display: flex;
     flex-direction: column;
-    @media (max-width: 500px) {
+    @media (max-width: 600px) {
         margin: 15.3vh 6vw;
     }
 `;
@@ -83,6 +83,9 @@ const Title = styled.div`
     line-height: 52px;
     color: #FFFFFF;
     max-width: 25vw;
+    @media (max-width: 600px) {
+        max-width: 75vw;
+    }
 `;
 const StyledLink = styled(Link)`
     text-decoration: none;
