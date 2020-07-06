@@ -127,7 +127,7 @@ const Text = styled.div`
     }
 `;
 const RightText = styled.div`
-    margin-top: 25vh;
+    margin-top: 27.8vh;
     color: #000000;
     font-size: 1.5vh;
     margin-right: 3vw;
