@@ -29,19 +29,20 @@ const WhatWeOffer: React.FC = () => {
                 <TextSection>
                     <Title>WAS BIETEN WIR?</Title>
                     <Text>
-                        <Heading>Abrechnung von Pflegeleistungen</Heading>
-                    - Buchung der laufenden Geschäftsvorfälle<br />
-                    - Debitoren -und Kreditorenbuchhaltung<br />
-                    - Pflege der offenen Posten<br />
-                    - Zahlungsüberwachung<br />
-                    - Forderungsmanagement, Mahnwesen<br />
-                    - Ausdruck von Zwischenauswertungen, z.B. Kassenbuch, OPListen, Sach- und Personenkonten,<br />
-                    Summen- und Saldenlisten, BWA, Rating, Journal u.ä.
+                    <Heading>Finanzbuchhaltung</Heading>
+                    <SubText>Abrechnung von Pflegeleistungen</SubText>
+                    <SubText>Buchung der laufenden Geschäftsvorfälle</SubText>
+                    <SubText>Debitoren -und Kreditorenbuchhaltung</SubText>
+                    <SubText>Pflege der offenen Posten</SubText>
+                    <SubText>Zahlungsüberwachung</SubText>
+                    <SubText>Forderungsmanagement, Mahnwesen</SubText>
+                    <SubText>Ausdruck von Zwischenauswertungen, z.B. Kassenbuch, OPListen, Sach- und Personenkonten,
+                    Summen- und Saldenlisten, BWA, Rating, Journal u.ä.</SubText>
                     <p />
-                        <Heading>Lohnbuchhaltung</Heading>
-                    - laufende monatliche Abrechnung<br />
-                    - Jahresendarbeiten<br />
-                    - Bescheinigungen<br />
+                    <Heading>Lohnbuchhaltung</Heading>
+                    <SubText>laufende monatliche Abrechnung</SubText>
+                    <SubText>Jahresendarbeiten</SubText>
+                    <SubText>Bescheinigungen</SubText>
                     <p />
                     <StyledSpan>WIR SIND FÜR SIE DA!</StyledSpan>
                     </Text>
@@ -62,7 +63,7 @@ const ActionButtonWhite = styled(ActionButton)`
         display: flex;
     }
 `;
-const Heading = styled.h2`
+const Heading = styled.h4`
     @media (max-width: 900px) {
         margin: 1vh auto;
     }
@@ -92,7 +93,7 @@ const Title = styled.div`
     line-height: 3.25rem;
     color: #FFFFFF;
     @media (max-height: 900px) {
-        font-size: 5.2vh;
+        font-size: 4.2vh;
         line-height: 5.7vh;
     }
 `;
@@ -131,6 +132,17 @@ const StyledSpanHide = styled.span`
         display: none;
     }
 `;
-
+const SubText = styled.div`
+  position: relative;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 9px;
+    left: -8px;
+    height: 1px;
+    width: 5px;
+    background: #FFFFFF;
+  }
+`;
 
 export default WhatWeOffer;
