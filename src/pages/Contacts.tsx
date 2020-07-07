@@ -50,7 +50,7 @@ const StyledImage = styled(Contact)`
     margin-left: auto;
     order: 2;
     margin-top: 22vh;
-    margin-right:  10.069vw;
+    margin-right:  12.069vw;
     display: block;
     float: right;
     width: 25.677083333333332vw;
