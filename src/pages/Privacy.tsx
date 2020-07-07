@@ -83,7 +83,7 @@ const TextSection = styled.div`
         margin: 20vh 0 0 8.056vw;
     }
     @media (max-height: 900px) {
-        margin: 30vh 0 0 8.056vw;
+        margin: 20.3vh 0 0 8.056vw;
 
     }
 `;

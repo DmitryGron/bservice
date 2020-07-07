@@ -52,13 +52,11 @@ const StyledContainer = styled.div`
     margin-left: -295px;
     @media (max-width: 667px) {
         left: 0;
-        margin-left: 10%;
-        width: 100%;
+        margin-left: 0;
     }
 `;
 const StyledLink = styled(Link)`
     margin: 3vh 40px;
-    width: 64px;
     height: 23px;
     left: 500px;
     top: 847px;
@@ -70,7 +68,8 @@ const StyledLink = styled(Link)`
     color: #FFFFFF;
     text-decoration: none;
     @media (max-width: 667px) {
-        margin: 5%;
+        font-size: 3vmin;
+        margin: 2vh 8vw;
     }
 `;
 
