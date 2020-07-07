@@ -72,7 +72,7 @@ const Title = styled.div`
     line-height: 3.25rem;
     color: #000000;
     @media (max-height: 900px) {
-        font-size: 5.2vh;
+        font-size: 4.2vh;
         line-height: 5.7vh;
     }
 `;

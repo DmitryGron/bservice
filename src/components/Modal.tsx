@@ -72,7 +72,7 @@ const TextSection = styled.div`
     display: flex;
     flex-direction: column;
     @media (max-width: 600px) {
-        margin: 15.3vh 6vw;
+        margin: 25.3vh 6vw;
     }
 `;
 const Title = styled.div`
@@ -87,7 +87,7 @@ const Title = styled.div`
         max-width: 75vw;
     }
     @media (max-height: 900px) {
-        font-size: 5.2vh;
+        font-size: 4.2vh;
         line-height: 5.7vh;
     }
 `;

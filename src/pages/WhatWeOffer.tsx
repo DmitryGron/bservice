@@ -24,14 +24,14 @@ const WhatWeOffer: React.FC = () => {
             <Logo />
             <ActionButtonWhite src={whiteBurger} onClick={handleOpen} />
                 <Image component={StyledImage} src={whatWeOffer} alt="what-we-offer-image" />
-            <StyledSpan>WIR SIND FÜR SIE DA!</StyledSpan>
+            <StyledSpanHide>WIR SIND FÜR SIE DA!</StyledSpanHide>
             <LeftSection>
                 <TextSection>
-                    <Title>WAS GENAU BIETEN WIR AN?</Title>
+                    <Title>WAS BIETEN WIR?</Title>
                     <Text>
                         <Heading>Abrechnung von Pflegeleistungen</Heading>
                     - Buchung der laufenden Geschäftsvorfälle<br />
-                    - Debitoren- und Kreditorenbuchhaltung<br />
+                    - Debitoren -und Kreditorenbuchhaltung<br />
                     - Pflege der offenen Posten<br />
                     - Zahlungsüberwachung<br />
                     - Forderungsmanagement, Mahnwesen<br />
@@ -42,7 +42,8 @@ const WhatWeOffer: React.FC = () => {
                     - laufende monatliche Abrechnung<br />
                     - Jahresendarbeiten<br />
                     - Bescheinigungen<br />
-                        <StyledSpan>WIR SIND FÜR SIE DA!</StyledSpan>
+                    <p />
+                    <StyledSpan>WIR SIND FÜR SIE DA!</StyledSpan>
                     </Text>
                 </TextSection>
             </LeftSection>
@@ -67,18 +68,13 @@ const Heading = styled.h2`
     }
 `;
 const StyledSpan = styled.span`
-    position: absolute;
-    bottom: 8.7vh;
-    left: 3.125vw;
     font-family: Montserrat;
     font-style: normal;
     font-weight: 800;
-    font-size: 1.125rem;
-    line-height: 1.625rem;
 `;
 const TextSection = styled.div`
     display: none;
-    margin: 25vh 8.056vw;
+    margin: 25vh 2vw 2vh 8.056vw;
     flex-direction: column;
     max-width: 80vw;
     @media (max-width: 900px) and (min-width: 600px) {
@@ -86,7 +82,7 @@ const TextSection = styled.div`
     }
     @media (max-width: 600px) {
         display: flex;
-        margin: 15.3vh 6vw;
+        margin: 15.3vh 2vw 2vh 8.056vw;
     }
 `;
 const Title = styled.div`
@@ -122,5 +118,19 @@ const StyledImage = styled.img`
         display: none;
     }
 `;
+const StyledSpanHide = styled.span`
+    position: absolute;
+    bottom: 8.7vh;
+    left: 3.125vw;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 1.125rem;
+    line-height: 1.625rem;
+    @media (max-width: 900px) {
+        display: none;
+    }
+`;
+
 
 export default WhatWeOffer;

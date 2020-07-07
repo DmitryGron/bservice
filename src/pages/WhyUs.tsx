@@ -75,7 +75,7 @@ const TextSection = styled.div`
     }
     @media (max-width: 600px) {
         max-width: 75.520833vw;
-        margin: 15.3vh 8.056vw;
+        margin: 20.3vh 8.056vw;
     }
 `;
 const Title = styled.div`
@@ -85,7 +85,7 @@ const Title = styled.div`
     line-height: 3.25rem;
     color: #FFFFFF;
     @media (max-height: 900px) {
-        font-size: 5.2vh;
+        font-size: 4.2vh;
         line-height: 5.7vh;
     }
 `;
