@@ -82,7 +82,6 @@ const TextSection = styled.div`
     flex-direction: column;
     max-width: 80vw;
     @media (max-width: 900px) and (min-width: 600px) {
-        margin: 15.3vh 4vw;
         display: flex;
     }
     @media (max-width: 600px) {
