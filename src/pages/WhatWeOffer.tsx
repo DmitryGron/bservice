@@ -36,7 +36,7 @@ const WhatWeOffer: React.FC = () => {
                     <SubText>Pflege der offenen Posten</SubText>
                     <SubText>Zahlungsüberwachung</SubText>
                     <SubText>Forderungsmanagement, Mahnwesen</SubText>
-                    <SubText>Ausdruck von Zwischenauswertungen, z.B. Kassenbuch, OPListen, Sach- und Personenkonten,
+                    <SubText>Ausdruck von Zwischenauswertungen, z.B. Kassenbuch, OP-Listen, Sach- und Personenkonten,
                     Summen- und Saldenlisten, BWA, Rating, Journal u.ä.</SubText>
                     <p />
                     <Heading>Lohnbuchhaltung</Heading>
@@ -83,7 +83,7 @@ const TextSection = styled.div`
     }
     @media (max-width: 600px) {
         display: flex;
-        margin: 15.3vh 2vw 2vh 8.056vw;
+        margin: 20.3vh 2vw 2vh 8.056vw;
     }
 `;
 const Title = styled.div`

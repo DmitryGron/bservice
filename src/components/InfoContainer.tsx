@@ -33,8 +33,7 @@ export const InfoContainerBlack: React.FC = () => {
         <StyledContainer>
             <StyledLink
                 style={{ color: `${window.location.href.indexOf('kontakt') > -1 ? '#A83617' : '#000000'}` }}
-                to={AppPath.CONTACTS}
-            >Kontakt</StyledLink>
+                to={AppPath.CONTACTS}>Kontakt</StyledLink>
             <StyledLink
                 style={{ color: `${window.location.href.indexOf('impressum') > -1  ? '#A83617' : '#000000'}` }}
                 to={AppPath.IMPRESSIONS}>Impressum</StyledLink>

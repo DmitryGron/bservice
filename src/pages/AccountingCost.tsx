@@ -67,7 +67,7 @@ const TextSection = styled.div`
     }
     @media (max-width: 600px) {
         max-width: 75.520833vw;
-        margin: 15.3vh auto 0 8.056vw;
+        margin: 20.3vh auto 0 8.056vw;
     }
 `;
 const Title = styled.div`

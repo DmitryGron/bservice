@@ -689,6 +689,8 @@ const Heading = styled.h2`
     @media (max-height: 900px) {
         font-size: 2vh;
         line-height: 2.8vh;
+        margin: 1vh auto;
+
     }
 `;
 const StyledContextWrapper = styled.div`
