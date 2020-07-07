@@ -24,7 +24,7 @@ const AccountingCost: React.FC = () => {
             <ActionButtonWhite src={whiteBurger} onClick={handleOpen} />
             <LeftSection>
                 <TextSection>
-                    <Title> WAS KOSTETDIE BUCHHALTUNG?</Title>
+                    <Title> WAS KOSTET <br/> DIE BUCHHALTUNG?</Title>
                     <Text>
                         Unsere Honorare richten sich wie überall nach dem Aufwand und den tatsächlich in Anspruch genommenen Leistungen.
                         Eine gut vorbereitete Buchhaltung mit vollständigen Belegen spart jedoch Zeit und Kosten.

@@ -49,8 +49,8 @@ const StyledSpan = styled.span`
 const StyledImage = styled(Contact)`
     margin-left: auto;
     order: 2;
-    margin-top: 19.8vh;
-    margin-right:  7.552083333333333vw;
+    margin-top: 22vh;
+    margin-right:  10.069vw;
     display: block;
     float: right;
     width: 25.677083333333332vw;
