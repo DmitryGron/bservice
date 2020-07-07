@@ -44,7 +44,7 @@ const PrivacyContent: React.FC = () => {
           </RightText>
       </RowWrapper>
       <Divider />
-      <LeftText><Heading> 1. Begriffsbestimmungen</Heading></LeftText>
+      <HeadingWrapper><Heading> 1. Begriffsbestimmungen</Heading></HeadingWrapper>
       <RowWrapper>
         <LeftText>
           Die Datenschutzerklärung der Buchhaltung Service Berlin beruht auf den
@@ -184,7 +184,7 @@ const PrivacyContent: React.FC = () => {
         </WideText>
       </RowWrapper>
       <Divider />
-      <LeftText><Heading>3. Erfassung von allgemeinen Daten und Informationen</Heading></LeftText>
+      <HeadingWrapper><Heading>3. Erfassung von allgemeinen Daten und Informationen</Heading></HeadingWrapper>
       <RowWrapper>
         <LeftText>
           Die Internetseite der Buchhaltung Service Berlin erfasst mit jedem Aufruf der
@@ -221,7 +221,7 @@ const PrivacyContent: React.FC = () => {
           </RightText>
       </RowWrapper>
       <Divider />
-      <LeftText><Heading>4. Routinemäßige Löschung und Sperrung von personenbezogenen Daten</Heading></LeftText>
+      <HeadingWrapper><Heading>4. Routinemäßige Löschung und Sperrung von personenbezogenen Daten</Heading></HeadingWrapper>
       <RowWrapper>
         <LeftText>
           Der für die Verarbeitung Verantwortliche verarbeitet und speichert
@@ -239,7 +239,7 @@ const PrivacyContent: React.FC = () => {
           </RightText>
       </RowWrapper>
       <Divider />
-      <LeftText><Heading>5. Rechte der betroffenen Person</Heading></LeftText>
+      <HeadingWrapper><Heading>5. Rechte der betroffenen Person</Heading></HeadingWrapper>
       <RowWrapper>
         <LeftText>
           <b>a) Recht auf Bestätigung</b><br />
@@ -652,6 +652,10 @@ const LeftText = styled.div`
         line-height: 2.2vh;
     }
 `;
+const HeadingWrapper = styled.div`
+    font-family: Montserrat;
+    color: #000000;
+`;
 const WideText = styled.div`
     margin: 2vh 0;
     font-family: Montserrat;
@@ -689,8 +693,7 @@ const Heading = styled.h2`
     @media (max-height: 900px) {
         font-size: 2vh;
         line-height: 2.8vh;
-        margin: 1vh auto;
-
+        margin: 1vh auto 0;
     }
 `;
 const StyledContextWrapper = styled.div`
