@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, HashRouter, Switch, Route } from 'react-router-dom';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import './App.css';
 import { AppPath } from './layout/appRoutes';
 import { NotFound } from './pages/NotFound';
@@ -13,7 +13,7 @@ import Privacy from './pages/Privacy';
 
 function App() {
   return (
-    <HashRouter>
+    <BrowserRouter>
           <Switch>
                 <Route path={AppPath.ROOT} exact component={Home} />
                 <Route path={AppPath.WHYUS} component={WhyUs} />
@@ -24,7 +24,7 @@ function App() {
                 <Route path={AppPath.PRIVACY} component={Privacy} />
                 <Route component={NotFound} />
             </Switch>
-      </HashRouter>
+      </BrowserRouter>
   );
 }
 
