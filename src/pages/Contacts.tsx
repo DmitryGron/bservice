@@ -58,6 +58,9 @@ const StyledImage = styled(Contact)`
     @media (max-width: 900px) {
         display: none;
     }
+    @media (max-width: 900px) and (orientation: landscape) {
+        display: block;
+    }
 `;
 const TextSection = styled.div`
     margin-top: 30.4vh;
