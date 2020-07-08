@@ -73,6 +73,8 @@ const StyledImage = styled(PrivacyImg)`
     @media (max-width: 900px) {
         display: none;
     }
+    @media (max-height: 900px) {
+        margin-top: 15.4vh;    }
 `;
 const TextSection = styled.div`
     margin-top: 27.8vh;

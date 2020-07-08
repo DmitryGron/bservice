@@ -653,6 +653,13 @@ const LeftText = styled.div`
     }
 `;
 const HeadingWrapper = styled.div`
+ font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.8vh;
+    color: #000000;
+    max-width: 45vw;
+    line-height: 1.625rem;
     font-family: Montserrat;
     color: #000000;
 `;
