@@ -74,8 +74,10 @@ const StyledImage = styled(PrivacyImg)`
         display: none;
     }
     @media (max-height: 900px) {
-        margin-top: 15.4vh;    }
-`;
+        margin-top: 18.4vh;
+        width: 27.736vw;
+        height: 30.7vh;
+    `;
 const TextSection = styled.div`
     margin-top: 27.8vh;
     margin-left: 8.056vw;
