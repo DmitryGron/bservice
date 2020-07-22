@@ -27,7 +27,7 @@ const Home: React.FC = () => {
             <ActionButtonWhite src={whiteBurger} onClick={handleOpen}/>
             <LeftSection>
                 <Image component={StyledImage} src={scores} alt="Scores image"/>
-                <Title>Ordnung ist der Schlüssel zum Erfolg</Title>
+                <Title>Ordnung ist <br/><br/> der Schlüssel <br/><br/> zum Erfolg</Title>
             </LeftSection>
             <RightSection>
                 <ActionButton src={burger} onClick={handleOpen}/>
@@ -47,9 +47,12 @@ const Title = styled.div`
     line-height: 1.625rem;
     text-transform: uppercase;
     color: #FFFFFF;
-    @media (max-width: 600px){
-        width: 90.65625vw;
-        margin: 2vh 5vw;
+    @media (min-width: 900px){
+        margin: 4.7vh auto;
+        br 
+    { 
+       display: none;
+    }
     }
 `;
 const StyledImage = styled.img`

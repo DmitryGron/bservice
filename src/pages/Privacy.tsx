@@ -77,6 +77,7 @@ const StyledImage = styled(PrivacyImg)`
         margin-top: 18.4vh;
         width: 27.736vw;
         height: 30.7vh;
+    }
     `;
 const TextSection = styled.div`
     margin-top: 27.8vh;

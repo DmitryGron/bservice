@@ -21,6 +21,7 @@ const StyledLink = styled.a`
 `;
 const StyledImage = styled.img`
   position: absolute;
+  display: flex;
   width: 11.682vw;
   height: 9.6vh;
   min-width: 130px;
