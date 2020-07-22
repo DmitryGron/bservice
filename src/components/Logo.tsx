@@ -18,6 +18,7 @@ const StyledLink = styled.a`
   min-width: 130px;
   min-height: 65px;
   margin: 4.4vh 4.167vw;
+  display: flex;
 `;
 const StyledImage = styled.img`
   position: absolute;
