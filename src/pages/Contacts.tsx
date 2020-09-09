@@ -28,7 +28,7 @@ const Contacts: React.FC = () => {
                     Telefon: <StyledSpan><a href="tel:+015217840168" style={{ textDecoration: 'none', color: 'black' }}>0152</a> / <a href="tel:17840168" style={{ textDecoration: 'none', color: 'black' }}>178 40 168</a></StyledSpan><br />
                     Telefax: <StyledSpan><a href="tel:+030290 48 188" style={{ textDecoration: 'none', color: 'black' }}>030</a> / <a href="tel:29048188" style={{ textDecoration: 'none', color: 'black' }}>290 48 188</a></StyledSpan>
                         <p />
-                    Buchhaltung Service Berlin <br />
+                    Buchhaltung Service <br />
                     Alessia Kostenko <br />
                     Bürgerheimstr. 4 <br />
                     10365 Berlin <br />

@@ -33,7 +33,7 @@ const WhyUs: React.FC = () => {
                     Wir kennen uns daher mit den Besonderheiten der Pflege bestens aus.
                     <p />
                         <b>BUCHHALTUNG SERVICE</b> garantiert Ihnen eine zuverlässige Buchhaltung, damit
-                    Sie für dietäglichen Herausforderungen der Pflege denRücken frei haben.
+                    Sie für die täglichen Herausforderungen der Pflege den Rücken frei haben.
                     <p />
                         <StyledSpan>AUS DER PFLEGE, FÜR DIE PFLEGE!</StyledSpan>
                     </Text>

@@ -173,7 +173,7 @@ const PrivacyContent: React.FC = () => {
           Verantwortlicher im Sinne der Datenschutz-Grundverordnung, sonstiger in den
           Mitgliedstaaten der Europäischen Union geltenden Datenschutzgesetze und anderer
           Bestimmungen mit datenschutzrechtlichem Charakter ist die:<br />
-          Buchhaltung Service Berlin<br />
+          Buchhaltung Service <br />
           Bürgerheimstraße 4<br />
           <p />
           10365 Berlin<br />

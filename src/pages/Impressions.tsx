@@ -26,7 +26,7 @@ const Impressions: React.FC = () => {
                     <Text>
                         <b>Angaben gemäß § 5 TMG</b>
                         <p />
-                    Buchhaltung Service Berlin<br />
+                    Buchhaltung Service<br />
                     Alessia Kostenko<br />
                     (Einzelunternehmerin)<br />
                     Bürgerheimstr. 4<br />

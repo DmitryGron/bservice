@@ -103,7 +103,7 @@ const StyledLink = styled(Link)`
     }
 `;
 const Text = styled.div`
-    margin: 1vh 0;
+    margin: 2vh 0;
     font-family: Montserrat;
     font-weight: 900;
     font-size: 1.125rem;
